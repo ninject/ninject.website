@@ -1,0 +1,9 @@
+<use master="main" />
+
+<content name="scripts">
+
+</content>
+
+<content name="body">
+	Hi
+</content>

@@ -1,0 +1,106 @@
+body {
+	font-size: 62.5%;
+	font-family: Calibri, Tahoma, Verdana, Helvetica, Arial, Sans-Serif;
+	color: #ddd;
+	background-color: #000;
+}
+
+a:link, a:visited {
+	color: #eee;
+}
+
+a:hover, a:active {
+	color: #fff;
+}
+
+#container {
+	width: 960px;
+	margin: 0px auto;
+	border-left: 3px solid #222;
+	border-right: 3px solid #222;
+	background-color: #111;
+}
+
+#splash {
+	position: relative;
+	z-index: 2;
+}
+
+#splash a {
+	display: block;
+	width: 960px;
+	height: 380px;
+	background: transparent url(../images/splash.png) no-repeat center center;
+	text-indent: -9999em;
+}
+
+#navigation {
+	position: relative;
+	top: -12px;
+	z-index: 1;
+}
+
+#navigation li {
+	display: inline;
+	list-style-type: none;
+}
+
+.ie7 #navigation li {
+	display: inline;
+}
+
+#navigation li a {
+	position: relative;
+	display: block;
+	float: left;
+	width: 137px;
+	height: 150px;
+	background-color: #222;
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	text-indent: -9999px;
+}
+
+#navigation li a span.hover {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: block;
+	width: 137px;
+	height: 150px;
+	background-position: -137px center;
+	cursor: pointer;
+}
+
+#navigation #navigation-download a {
+	background-image: url(../images/navigation/download.png);
+}
+
+#navigation #navigation-contribute a {
+	background-image: url(../images/navigation/contribute.png);
+}
+
+#navigation #navigation-extensions a {
+	background-image: url(../images/navigation/extensions.png);
+}
+
+#navigation #navigation-documentation a {
+	background-image: url(../images/navigation/documentation.png);
+}
+
+#navigation #navigation-community a {
+	background-image: url(../images/navigation/community.png);
+}
+
+#navigation #navigation-sponsors a {
+	background-image: url(../images/navigation/sponsors.png);
+}
+
+#navigation #navigation-merchandise a {
+	width: 138px;
+	background-image: url(../images/navigation/merchandise.png);
+}
+
+#content {
+	font-size: 1.8em;
+}
