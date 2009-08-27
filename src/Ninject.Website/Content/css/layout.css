@@ -1,3 +1,9 @@
+body, html {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
 body {
 	font-size: 62.5%;
 	font-family: Calibri, Tahoma, Verdana, Helvetica, Arial, Sans-Serif;
@@ -29,14 +35,14 @@ a:hover, a:active {
 #splash a {
 	display: block;
 	width: 960px;
-	height: 380px;
-	background: transparent url(../images/splash.png) no-repeat center center;
+	height: 280px;
+	background: transparent url(../images/splash.png) no-repeat 12px bottom;
 	text-indent: -9999em;
 }
 
 #navigation {
 	position: relative;
-	top: -12px;
+	top: -6px;
 	z-index: 1;
 }
 
@@ -54,7 +60,7 @@ a:hover, a:active {
 	display: block;
 	float: left;
 	width: 137px;
-	height: 150px;
+	height: 158px;
 	background-color: #222;
 	background-repeat: no-repeat;
 	background-position: 0px center;
@@ -67,7 +73,7 @@ a:hover, a:active {
 	left: 0px;
 	display: block;
 	width: 137px;
-	height: 150px;
+	height: 158px;
 	background-position: -137px center;
 	cursor: pointer;
 }
@@ -103,4 +109,5 @@ a:hover, a:active {
 
 #content {
 	font-size: 1.8em;
+	padding: 12px;
 }

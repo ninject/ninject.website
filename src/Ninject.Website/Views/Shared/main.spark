@@ -12,6 +12,7 @@
 		${Html.Script("~/content/js/lib/jquery.js")}
 		${Html.Script("~/content/js/lib/jquery.ui.js")}
 		${Html.Script("~/content/js/lib/jquery.easing.js")}
+		${Html.Script("~/content/js/lib/jquery.scrollable.js")}
 		${Html.Script("~/content/js/lib/browser.js")}
 		${Html.Script("~/content/js/common.js")}
 		<script type="text/javascript">

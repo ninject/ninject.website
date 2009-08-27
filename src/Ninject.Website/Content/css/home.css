@@ -1,0 +1,15 @@
+#cards {
+	position: relative;
+	overflow: hidden;
+	width: 936px;
+	height: 400px;
+}
+
+#cards .items {
+	position: absolute;
+	width: 99999px;
+}
+
+#cards .items div {
+	float: left;
+}

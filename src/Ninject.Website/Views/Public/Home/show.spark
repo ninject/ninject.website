@@ -1,9 +1,32 @@
 <use master="main" />
 
-<content name="scripts">
+<content name="stylesheets">
+	${Html.Stylesheet("~/content/css/home.css")}
+</content>
 
+<content name="scripts">
+	${Html.Script("~/content/js/lib/jquery.scrollable.js")}
+	<script type="text/javascript">
+		$(function() {
+			$("#cards").scrollable();
+		});
+	</script>
 </content>
 
 <content name="body">
-	Hi
+	<div id="cards">
+		<a href="#" class="prev">Previous</a>
+		<a href="#" class="next">Next</a>
+		<div class="items">
+			<div>
+				Card 1
+			</div>
+			<div>
+				Card 2
+			</div>
+			<div>
+				Card 3
+			</div>
+		</div>
+	</div>
 </content>
