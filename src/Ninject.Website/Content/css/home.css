@@ -1,15 +1,79 @@
 #cards {
+	width: 786px;
+	min-height: 200px;
+	margin: 12px 76px;
+}
+
+.arrow {
 	position: relative;
-	overflow: hidden;
-	width: 936px;
-	height: 400px;
+	display: block;
+	width: 40px;
+	height: 68px;
+	margin: 12px 24px;
+	background-color: #111;
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	text-indent: -9999em;
 }
 
-#cards .items {
+.arrow span.hover {
 	position: absolute;
-	width: 99999px;
+	top: 0px;
+	left: 0px;
+	display: block;
+	width: 40px;
+	height: 68px;
+	background-position: -40px center;
+	background-repeat: no-repeat;
+	cursor: pointer;
 }
 
-#cards .items div {
-	float: left;
+.prev {
+	position: absolute;
+	left: 0px;
+	background-image: url(../images/arrow-left.png);
+}
+
+.next {
+	position: absolute;
+	right: 0px;
+	background-image: url(../images/arrow-right.png);
+}
+
+#cards .card {
+	width: 100%;
+	background-color: #111;
+}
+
+#cards .card em {
+	color: #fff;
+}
+
+#cards .card-header {
+	text-indent: -9999em;
+	background-color: #111;
+	background-position: left center;
+	background-repeat: no-repeat;
+	height: 55px;
+	width: 100%;
+}
+
+#cards #card-1 .card-header {
+	background-image: url(../images/headers/cards/bend-software-to-your-will.png);
+}
+
+#cards #card-2 .card-header {
+	background-image: url(../images/headers/cards/laugh-in-the-face-of-change.png);
+}
+
+#cards #card-3 .card-header {
+	background-image: url(../images/headers/cards/powerful-fluent-interface.png);
+}
+
+#cards #card-4 .card-header {
+	background-image: url(../images/headers/cards/write-smarter-software-everywhere.png);
+}
+
+#cards #card-5 .card-header {
+	background-image: url(../images/headers/cards/be-fast-be-agile-be-precise.png);
 }
