@@ -1,8 +1,8 @@
-body, html {
+/*body, html {
 	width: 100%;
 	height: 100%;
 	overflow: auto;
-}
+}*/
 
 body {
 	font-size: 62.5%;
@@ -24,6 +24,7 @@ a:hover, a:active {
 	margin: 0px auto;
 	border-left: 3px solid #222;
 	border-right: 3px solid #222;
+	border-bottom: 12px solid #222;
 	background-color: #111;
 }
 
@@ -157,7 +158,7 @@ h1 a {
 	font-size: 1.2em;
 	line-height: 1.1em;
 	color: #aaa;
-	border-top: 12px solid #222;
+	height: 60px;
 }
 
 #footer .section {
