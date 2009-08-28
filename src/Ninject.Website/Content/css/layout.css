@@ -154,10 +154,10 @@ h1 a {
 }
 
 #footer {
-	font-size: 0.7em;
+	font-size: 1.2em;
 	line-height: 1.1em;
 	color: #aaa;
-	border-top: 3px solid #222;
+	border-top: 12px solid #222;
 }
 
 #footer .section {
@@ -166,7 +166,7 @@ h1 a {
 
 #footer .enkari {
 	float: left;
-	margin-right: 6px;
+	margin-right: 12px;
 }
 
 #footer .enkari a {
@@ -174,7 +174,6 @@ h1 a {
 	display: block;
 	width: 95px;
 	height: 30px;
-	background-color: #222;
 	background-repeat: no-repeat;
 	background-position: 0px center;
 	background-image: url(../images/enkari.png);

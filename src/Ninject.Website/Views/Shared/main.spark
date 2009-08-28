@@ -49,6 +49,19 @@
 			<div id="content">
 				<use content="body" />
 			</div>
+			<div id="footer" class="container_12">
+				<div class="section grid_12">
+					<div class="enkari">
+						<a href="http://enkari.com/" target="_blank">Enkari</a>
+					</div>
+					<p>
+						Ninject is the illegitimate brainchild of <a href="http://kohari.org/" target="_blank">Nate Kohari</a>.
+					</p>
+					<p>
+						Copyright &copy 2007-2009 <a href="http://enkari.com/" target="_blank">Enkari, Ltd.</a> and contributors.
+					</p>
+				</div>
+			</div>
 		</div>
 	
 	</body>

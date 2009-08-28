@@ -74,17 +74,22 @@
 }
 
 #examples {
-	border-top: 18px solid #222;
-	border-bottom: 18px solid #222;
-	background-color: #161616 !important;
+	border-top: 12px solid #222;
+	border-bottom: 12px solid #222;
+	background-color: #161616;
 	font-size: 0.8em;
 	overflow: hidden;
 	padding: 12px 0px;
 }
 
-.code-sample.first {
+.code-sample {
 	border-right: 2px dotted #222;
 	margin-right: -2px;
+}
+
+.code-sample.last {
+	border-right: 0px;
+	margin-right: 0px;
 }
 
 .code-sample h3 {
@@ -92,12 +97,31 @@
 	font-weight: normal;
 	font-size: 1.3em;
 	font-style: italic;
-	margin: 6px 0px;
+	margin: 6px 0px 6px 18px;
 }
 
 #bottom {
+	padding: 12px 0px;
 	overflow: hidden;
+	color: #bbb;
+}
+
+#bottom .section {
+	font-size: 0.9em;
+	line-height: 1.1em;
+	border-right: 2px dotted #222;
+	margin-right: -2px;
+	min-height: 160px;
+}
+
+#bottom .section.last {
+	border-right: 0px;
+	margin-right: 0px;
 }
 
 #bottom .section h3 {
+	color: #fff;
+	font-weight: normal;
+	font-size: 1.1em;
+	margin: 6px 0px;
 }
