@@ -5,7 +5,8 @@
 	
 		<title><use content="title" /> - Ninject</title>
 		
-		${Html.Stylesheet("~/content/css/reset.css")}
+		${Html.Stylesheet("~/content/css/lib/reset.css")}
+		${Html.Stylesheet("~/content/css/lib/960.css")}
 		${Html.Stylesheet("~/content/css/layout.css")}
 		<use content="stylesheets" />
 		
@@ -14,7 +15,7 @@
 		${Html.Script("~/content/js/common.js")}
 		<script type="text/javascript">
 			$(function() {
-				$("#navigation li a").hoverFade("fast");
+				$("#navigation li a,.enkari a").hoverFade("fast");
 			});
 		</script>
 		<use content="scripts" />
@@ -24,9 +25,9 @@
 	
 		<div id="container">
 			<div id="top">
-				<div id="splash">
+				<h1>
 					<a href="${Url.Action('show', 'home')}">Ninject</a>
-				</div>
+				</h1>
 				<div id="adzerk">
 					<div id="adzerk_ad_div">
 						<script type="text/javascript" src="http://engine.theloungenet.com/Server/DOTNETOS/NINJECT/NOCSS"></script>

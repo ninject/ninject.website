@@ -6,9 +6,9 @@ body, html {
 
 body {
 	font-size: 62.5%;
-	font-family: Calibri, Tahoma, Verdana, Helvetica, Arial, Sans-Serif;
+	font-family: Calibri, Tahoma, Verdana, Helvetica, Arial, sans-serif;
 	color: #ddd;
-	background-color: #000;
+	background-image: url(../images/background.png);
 }
 
 a:link, a:visited {
@@ -31,17 +31,26 @@ a:hover, a:active {
 	position: relative;
 }
 
-#splash {
+h1 {
 	position: relative;
 	z-index: 2;
 }
 
-#splash a {
+h1 a {
 	display: block;
-	width: 565px;
+	width: 650px;
 	height: 280px;
 	background: transparent url(../images/splash.png) no-repeat 12px bottom;
 	text-indent: -9999em;
+}
+
+.hover {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: block;
+	background-repeat: no-repeat;
+	cursor: pointer;
 }
 
 #adzerk {
@@ -67,18 +76,16 @@ a:hover, a:active {
 }
 
 #adzerk a:link, #adzerk a:visited {
-	color: #ddd;
-	text-decoration: none;
+	color: #aaa;
 }
 
 #adzerk a:hover, #adzerk a:active {
 	color: #fff;
-	text-decoration: underline;
 }
 
 #navigation {
 	position: relative;
-	top: -6px;
+	top: -8px;
 	z-index: 1;
 	height: 158px;
 }
@@ -104,16 +111,10 @@ a:hover, a:active {
 	text-indent: -9999px;
 }
 
-#navigation li a span.hover {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	display: block;
+#navigation li a .hover {
 	width: 137px;
 	height: 158px;
-	background-repeat: no-repeat;
 	background-position: -137px center;
-	cursor: pointer;
 }
 
 #navigation #navigation-download a {
@@ -149,5 +150,47 @@ a:hover, a:active {
 	position: relative;
 	font-size: 1.8em;
 	line-height: 1.2em;
-	padding: 12px;
+	overflow: hidden;
+}
+
+#footer {
+	font-size: 0.7em;
+	line-height: 1.1em;
+	color: #aaa;
+	border-top: 3px solid #222;
+}
+
+#footer .section {
+	margin: 12px;
+}
+
+#footer .enkari {
+	float: left;
+	margin-right: 6px;
+}
+
+#footer .enkari a {
+	position: relative;
+	display: block;
+	width: 95px;
+	height: 30px;
+	background-color: #222;
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	background-image: url(../images/enkari.png);
+	text-indent: -9999px;
+}
+
+#footer .enkari a .hover {
+	width: 95px;
+	height: 30px;
+	background-position: -95px center;
+}
+
+#footer a:link, #footer a:visited {
+	color: #aaa;
+}
+
+#footer a:hover, #footer a:active {
+	color: #fff;
 }

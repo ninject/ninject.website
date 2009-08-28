@@ -1,12 +1,15 @@
 <use master="main" />
 
 <content name="stylesheets">
+	${Html.Stylesheet("~/content/css/lib/shCore.css")}
 	${Html.Stylesheet("~/content/css/home.css")}
 </content>
 
 <content name="scripts">
 	${Html.Script("~/content/js/lib/jquery.cycle.js")}
 	${Html.Script("~/content/js/lib/jquery.easing.js")}
+	${Html.Script("~/content/js/lib/shCore.js")}
+	${Html.Script("~/content/js/lib/shBrushCSharp.js")}
 	<script type="text/javascript">
 		$(function() {
 			$("#cards").cycle({
@@ -18,6 +21,8 @@
 				pause: true
 			});
 			$(".arrow").hoverFade("fast");
+			SyntaxHighlighter.defaults["toolbar"] = false;
+			SyntaxHighlighter.all();
 		});
 	</script>
 </content>
@@ -27,54 +32,81 @@
 	<div class="next arrow"></div>
 	<div id="cards">
 		<div id="card-1" class="card">
-			<div class="card-header">
-				Bend software to your will
-			</div>
-			<div class="card-body">
-				Stop writing monolithic applications that make you feel like you have to move mountains to make the simplest of changes.
-				Ninject helps you use the technique of <em>dependency injection</em> to break your applications into <em>loosely-coupled,
-				highly-cohesive</em> components, and then glue them back together in a flexible manner.
-			</div>
+			<h2>Bend software to your will</h2>
+			Stop writing monolithic applications that make you feel like you have to move mountains to make the simplest of changes.
+			Ninject helps you use the technique of <em>dependency injection</em> to break your applications into <em>loosely-coupled,
+			highly-cohesive</em> components, and then glue them back together in a flexible manner.
 		</div>
 		<div id="card-2" class="card">
-			<div class="card-header">
-				Laugh in the face of change
-			</div>
-			<div class="card-body">
-				Change is inevitable, so be prepared. Ninject allows you to <em>embrace change</em> in your software's design, so it will
-				be easier to adjust it to <em>match changing business needs</em> and expectations. Then, the next time someone asks for
-				a "small" change to your application, you can laugh in triumph rather than quivering in pain.
-			</div>
+			<h2>Laugh in the face of change</h2>
+			Change is inevitable, so be prepared. Ninject allows you to <em>embrace change</em> in your software's design, so it will
+			be easier to adjust it to <em>match changing business needs</em> and expectations. Then, the next time someone asks for
+			a "small" change to your application, you can laugh in triumph rather than quivering in pain.
 		</div>
 		<div id="card-3" class="card">
-			<div class="card-header">
-				Powerful fluent interface
-			</div>
-			<div class="card-body">
-				Once you break your application into components, you have to glue them back together. Rather than depending on a bunch of
-				XML to describe how the pieces fit together, Ninject uses a powerful fluent interface. This lets you get the most out
-				of tools that you're already using: your compiler and your IDE.
-			</div>
+			<h2>Powerful fluent interface</h2>
+			Once you break your application into components, you have to glue them back together. Rather than depending on a bunch of
+			XML to describe how the pieces fit together, Ninject uses a powerful <em>fluent interface</em>. This lets you get the
+			most out of tools that you're already using, like your compiler and your IDE.
 		</div>
 		<div id="card-4" class="card">
-			<div class="card-header">
-				Write smarter software everywhere
-			</div>
-			<div class="card-body">
-				Dependency injection isn't just for big enterprise applications; with the right framework, you can apply the practice to
-				improve software projects of all sizes and types. Ninject was designed to be ultra-lightweight and universal. It also
-				runs pretty much anywhere, including on the .NET Compact Framework and Silverlight.
-			</div>
+			<h2>Write smarter software everywhere</h2>
+			Dependency injection isn't just for big enterprise applications; with the right framework, you can apply the practice to
+			improve software projects of <em>all sizes and types</em>. Ninject was designed to be ultra-lightweight and universal.
+			It also <em>runs pretty much anywhere</em>, including on Mono, the .NET Compact Framework, and Silverlight.
 		</div>
 		<div id="card-5" class="card">
-			<div class="card-header">
-				Be fast, be agile, be precise
+			<h2>Be fast, be agile, be precise</h2>
+			Ninject makes dependency injection <em>so easy</em> that it becomes hard not to follow good practices. Once you start
+			writing your applications with dependency injection in mind, your code will be easier to understand, easier to change,
+			and less error-prone. Simply put, Ninject makes your application <em>more ninja-like</em>!
+		</div>
+	</div>
+	<div id="examples" class="container_12">
+		<div class="code-sample first grid_6">
+			<h3>Write your code so it's flexible...</h3>
+			<pre class="brush:csharp">
+				public class Samurai {
+					public IWeapon Weapon { get; private set; }
+					public Samurai(IWeapon weapon) {
+						Weapon = weapon;
+					}
+				}
+			</pre>
+		</div>
+		<div class="code-sample grid_6">
+			<h3>...and let Ninject glue it together for you.</h3>
+			<pre class="brush:csharp">
+				public class WarriorModule : NinjectModule {
+					public override void Load() {
+						Bind&lt;IWeapon&gt;.To&lt;Sword&gt;();
+					}
+				}
+			</pre>
+		</div>
+	</div>
+	<div id="bottom" class="container_12">
+		<div class="section grid_4">
+			<h3>Ninject</h3>
+		</div>
+		<div class="section grid_4">
+			Section Two
+		</div>
+		<div class="section grid_4">
+			Section Three
+		</div>
+	</div>
+	<div id="footer" class="container_12">
+		<div class="section grid_12">
+			<div class="enkari">
+				<a href="http://enkari.com/" target="_blank">Enkari</a>
 			</div>
-			<div class="card-body">
-				Ninject makes dependency injection <em>so easy</em> that it becomes hard not to follow good practices. Once you start
-				writing your applications with dependency injection in mind, your code will be easier to understand, easier to change,
-				and less error-prone. Simply put, Ninject makes your application <em>more ninja-like</em>!
-			</div>
+			<p>
+				Ninject is the illegitimate brainchild of <a href="http://kohari.org/" target="_blank">Nate Kohari</a>.
+			</p>
+			<p>
+				Copyright &copy 2007-2009 <a href="http://enkari.com/" target="_blank">Enkari, Ltd</a> and contributors.
+			</p>
 		</div>
 	</div>
 </content>

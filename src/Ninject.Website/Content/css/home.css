@@ -1,7 +1,7 @@
 #cards {
-	width: 786px;
-	min-height: 200px;
-	margin: 12px 76px;
+	width: 796px;
+	height: 130px;
+	margin: 60px 86px;
 }
 
 .arrow {
@@ -9,23 +9,17 @@
 	display: block;
 	width: 40px;
 	height: 68px;
-	margin: 12px 24px;
+	margin: 86px 22px;
 	background-color: #111;
 	background-repeat: no-repeat;
 	background-position: 0px center;
 	text-indent: -9999em;
 }
 
-.arrow span.hover {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	display: block;
+.arrow .hover {
 	width: 40px;
 	height: 68px;
 	background-position: -40px center;
-	background-repeat: no-repeat;
-	cursor: pointer;
 }
 
 .prev {
@@ -49,31 +43,61 @@
 	color: #fff;
 }
 
-#cards .card-header {
+#cards h2 {
 	text-indent: -9999em;
 	background-color: #111;
 	background-position: left center;
 	background-repeat: no-repeat;
 	height: 55px;
 	width: 100%;
+	margin-bottom: 6px;
 }
 
-#cards #card-1 .card-header {
+#cards #card-1 h2 {
 	background-image: url(../images/headers/cards/bend-software-to-your-will.png);
 }
 
-#cards #card-2 .card-header {
+#cards #card-2 h2 {
 	background-image: url(../images/headers/cards/laugh-in-the-face-of-change.png);
 }
 
-#cards #card-3 .card-header {
+#cards #card-3 h2 {
 	background-image: url(../images/headers/cards/powerful-fluent-interface.png);
 }
 
-#cards #card-4 .card-header {
+#cards #card-4 h2 {
 	background-image: url(../images/headers/cards/write-smarter-software-everywhere.png);
 }
 
-#cards #card-5 .card-header {
+#cards #card-5 h2 {
 	background-image: url(../images/headers/cards/be-fast-be-agile-be-precise.png);
+}
+
+#examples {
+	border-top: 18px solid #222;
+	border-bottom: 18px solid #222;
+	background-color: #161616 !important;
+	font-size: 0.8em;
+	overflow: hidden;
+	padding: 12px 0px;
+}
+
+.code-sample.first {
+	border-right: 2px dotted #222;
+	margin-right: -2px;
+}
+
+.code-sample h3 {
+	color: #fff;
+	font-weight: normal;
+	font-size: 1.3em;
+	font-style: italic;
+	margin: 6px 0px;
+}
+
+#bottom {
+	overflow: hidden;
+}
+
+#bottom .section h3 {
 }
