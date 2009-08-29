@@ -15,7 +15,7 @@ using Ninject.Website.Framework;
 
 namespace Ninject.Website.Controllers
 {
-	public class DocumentationController : NinjectControllerBase
+	public class LearnController : NinjectControllerBase
 	{
 		public ViewResult Show()
 		{

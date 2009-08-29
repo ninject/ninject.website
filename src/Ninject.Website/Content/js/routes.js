@@ -6,9 +6,6 @@ var _routeTemplates = {
   "contribute": {
     "show": "/ninject/contribute"
   },
-  "documentation": {
-    "show": "/ninject/documentation"
-  },
   "download": {
     "show": "/ninject/download"
   },
@@ -21,6 +18,9 @@ var _routeTemplates = {
   },
   "home": {
     "show": "/ninject/"
+  },
+  "learn": {
+    "show": "/ninject/learn"
   },
   "merchandise": {
     "show": "/ninject/merchandise"

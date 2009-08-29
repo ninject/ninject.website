@@ -1,0 +1,15 @@
+<use master="main" />
+
+<content name="title">Sponsors</content>
+
+<content name="stylesheets">
+	${Html.Stylesheet("~/content/css/sponsors.css")}
+</content>
+
+<content name="body">
+	<h2 class="section-header">
+		Thank our sponsors!
+	</h2>
+	<div id="grid-container" class="container_12">
+	</div>
+</content>

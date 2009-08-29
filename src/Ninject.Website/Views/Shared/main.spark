@@ -38,9 +38,9 @@
 				</div>
 				<ul id="navigation">
 					<li id="navigation-download"><a href="${Url.Action('show', 'download')}">Download it</a></li>
-					<li id="navigation-contribute"><a href="${Url.Action('show', 'contribute')}">Contribute</a></li>
 					<li id="navigation-extensions"><a href="${Url.Action('show', 'extension')}">Extensions</a></li>
-					<li id="navigation-documentation"><a href="${Url.Action('show', 'documentation')}">Visit the Dojo</a></li>
+					<li id="navigation-contribute"><a href="${Url.Action('show', 'contribute')}">Contribute</a></li>
+					<li id="navigation-learn"><a href="${Url.Action('show', 'learn')}">Visit the Dojo</a></li>
 					<li id="navigation-community"><a href="${Url.Action('show', 'community')}">Speak up</a></li>
 					<li id="navigation-sponsors"><a href="${Url.Action('show', 'sponsor')}">Sponsors</a></li>
 					<li id="navigation-merchandise"><a href="${Url.Action('show', 'merchandise')}">Merchandise</a></li>

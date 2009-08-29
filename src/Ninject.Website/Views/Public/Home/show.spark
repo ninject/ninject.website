@@ -1,5 +1,7 @@
 <use master="main" />
 
+<content name="title">Open source dependency injector for .NET</content>
+
 <content name="stylesheets">
 	${Html.Stylesheet("~/content/css/lib/shCore.css")}
 	${Html.Stylesheet("~/content/css/home.css")}
@@ -44,7 +46,7 @@
 			a "small" change to your application, you can <em>laugh in triumph</em> rather than quivering in pain.
 		</div>
 		<div id="card-3" class="card">
-			<h2>Powerful fluent interface</h2>
+			<h2>Use your most powerful tools</h2>
 			Once you break your application into components, you have to glue them back together. Rather than depending on a bunch of
 			XML to describe how the pieces fit together, Ninject uses a powerful <em>fluent interface</em>. This lets you get the
 			most out of tools that you're already using, like your compiler and your IDE.
@@ -101,7 +103,7 @@
 		<div class="last section grid_4">
 			<h3>How much does it cost?</h3>
 			Ninject is and will always be <em>free</em> for both personal and commercial projects. It's also <em>open source</em>,
-			so you can also fork <a href="http://github.com/enkari/ninject" target="_blank">the code</a> and make any changes
+			so you can fork <a href="http://github.com/enkari/ninject" target="_blank">the code</a> and make any changes
 			you like. (We appreciate it if you share anything useful you come up with us, though!)
 		</div>
 	</div>

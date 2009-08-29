@@ -1,0 +1,15 @@
+<use master="main" />
+
+<content name="title">Extensions</content>
+
+<content name="stylesheets">
+	${Html.Stylesheet("~/content/css/extensions.css")}
+</content>
+
+<content name="body">
+	<h2 class="section-header">
+		Extensions from the community
+	</h2>
+	<div id="grid-container" class="container_12">
+	</div>
+</content>

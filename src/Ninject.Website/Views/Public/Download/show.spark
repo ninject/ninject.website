@@ -1,0 +1,108 @@
+<use master="main" />
+
+<content name="title">Download</content>
+
+<content name="stylesheets">
+	${Html.Stylesheet("~/content/css/download.css")}
+</content>
+
+<content name="body">
+	<h2 class="section-header">
+		Download the bits and get started
+	</h2>
+	<div id="grid-container" class="container_12">
+	
+		<div class="grid_12">
+			<div class="note">
+				Not sure which to get? You probably just want the .NET Framework 3.5 release version!
+			</div>
+		</div>
+		
+		<div class="grid_12">
+			<div class="banner">
+				<h3>Binaries</h3>
+			</div>
+		</div>
+		<div class="grid_6">
+			<div class="box">
+				<h4>.NET Framework 3.5</h4>
+				<ul>
+					<li>Debug</li>
+					<li>Release</li>
+				</ul>
+			</div>
+		</div>
+		<div class="grid_6">
+			<div class="box">
+				<h4>Silverlight 2.0/3.0</h4>
+				<ul>
+					<li>Debug</li>
+					<li>Release</li>
+				</ul>
+			</div>
+		</div>
+		<div class="grid_6">
+			<div class="box">
+				<h4>.NET Compact Framework 3.5</h4>
+				<ul>
+					<li>Debug</li>
+					<li>Release</li>
+				</ul>
+			</div>
+		</div>
+		<div class="grid_6">
+			<div class="box">
+				<h4>Mono 2.0</h4>
+				<ul>
+					<li>Debug</li>
+					<li>Release</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="grid_12">
+			<div class="banner">
+				<h3>Source Code</h3>
+			</div>
+		</div>
+		<div class="grid_12">
+			<div class="box">
+				<p>
+					Ninject's source is hosted on <a href="http://github.com/enkari/ninject">GitHub</a>. If you have an idea for a patch,
+					or you just want to tinker with the code, the easiest way to do so is to create your own fork on GitHub.
+				</p>
+				<p>
+					Not used to the sheer awesomeness of Git? Here are some links to get you started:
+					<ul>
+						<li><a href="http://github.com/guides/home">GitHub Guides</a></li>
+						<li><a href="http://flanders.co.nz/2009/03/21/gitgithub-survival-guide/">Ivan Porto Carrero's Git Survival Guide</a></li>
+					</ul>
+				</p>
+				<p>
+					If you don't want to bother with Git, you can also grab a <a href="http://github.com/enkari/ninject/zipball">zip archive</a>
+					or <a href="http://github.com/enkari/ninject/tarball">tarball</a> of the latest check-in.
+				</p>
+			</div>
+		</div>
+		
+		<div class="grid_12">
+			<div class="banner">
+				<h3>Older Versions</h3>
+			</div>
+		</div>
+		<div class="grid_12">
+			<div class="box">
+				<p>
+					Support for versions of the .NET Framework prior to 3.5 was discontinued in Ninject 2.0. If you need backwards
+					compatibility, you can still use Ninject 1.5. However, this version is only receiving critical bug fixes, all
+					new development is being done on the Ninject 2.0 codebase. Please only use this if you need to!
+				</p>
+				<ul>
+					<li>Binaries</li>
+					<li><a href="http://github.com/enkari/ninject1/">Source Repository</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+</content>
