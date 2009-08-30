@@ -87,8 +87,8 @@
   <ItemGroup>
     <Compile Include="Controllers\Public\CommunityController.cs" />
     <Compile Include="Controllers\Public\ContributeController.cs" />
-    <Compile Include="Controllers\Public\SponsorController.cs" />
-    <Compile Include="Controllers\Public\ExtensionController.cs" />
+    <Compile Include="Controllers\Public\SponsorsController.cs" />
+    <Compile Include="Controllers\Public\ExtensionsController.cs" />
     <Compile Include="Controllers\Public\LearnController.cs" />
     <Compile Include="Controllers\Public\MerchandiseController.cs" />
     <Compile Include="Controllers\Public\DownloadController.cs" />
@@ -105,9 +105,9 @@
     <None Include="Views\Public\Contribute\show.spark" />
     <None Include="Views\Public\Community\show.spark" />
     <None Include="Views\Public\Merchandise\show.spark" />
-    <None Include="Views\Public\Sponsor\show.spark" />
+    <None Include="Views\Public\Sponsors\show.spark" />
     <None Include="Views\Public\Learn\show.spark" />
-    <None Include="Views\Public\Extension\show.spark" />
+    <None Include="Views\Public\Extensions\show.spark" />
     <None Include="Views\Public\Download\show.spark" />
     <None Include="Views\Public\Error\error500.spark" />
     <None Include="Views\Public\Error\error404.spark" />

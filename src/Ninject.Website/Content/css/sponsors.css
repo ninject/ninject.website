@@ -1,3 +1,14 @@
 h2.section-header {
 	background-image: url(../images/headers/sponsors.png);
 }
+
+h3 {
+	font-weight: normal;
+	color: #fff;
+	background-color: #222;
+	padding: 6px 12px;
+}
+
+ul.sponsors {
+	padding: 12px;
+}

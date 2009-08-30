@@ -15,7 +15,7 @@ using Ninject.Website.Framework;
 
 namespace Ninject.Website.Controllers
 {
-	public class ExtensionController : NinjectControllerBase
+	public class SponsorsController : NinjectControllerBase
 	{
 		public ViewResult Show()
 		{

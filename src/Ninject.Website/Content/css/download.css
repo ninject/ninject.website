@@ -2,14 +2,11 @@ h2.section-header {
 	background-image: url(../images/headers/download.png);
 }
 
-.banner {
-	color: #fff;
-	background-color: #222;
-	padding: 12px;
-}
-
 h3 {
 	font-weight: normal;
+	color: #fff;
+	background-color: #222;
+	padding: 6px 12px;
 }
 
 .box {

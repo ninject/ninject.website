@@ -1,12 +1,12 @@
 body {
 	font-size: 62.5%;
 	font-family: Calibri, Tahoma, Verdana, Helvetica, Arial, sans-serif;
-	color: #ddd;
+	color: #ccc;
 	background-image: url(../images/background.png);
 }
 
 a:link, a:visited {
-	color: #eee;
+	color: #ccc;
 }
 
 a:hover, a:active {
@@ -104,6 +104,7 @@ p {
 	z-index: 1;
 	height: 158px;
 	margin: 0px;
+	background-color: #222;
 }
 
 #navigation li {
@@ -133,33 +134,101 @@ p {
 	background-position: -137px center;
 }
 
-#navigation #navigation-download a {
+#navigation-download a {
 	background-image: url(../images/navigation/download.png);
 }
 
-#navigation #navigation-contribute a {
+body.download #navigation-download a {
+	background-position: -137px center;
+}
+
+#navigation-contribute a {
 	background-image: url(../images/navigation/contribute.png);
 }
 
-#navigation #navigation-extensions a {
+body.contribute #navigation-contribute a {
+	background-position: -137px center;
+}
+
+#navigation-extensions a {
 	background-image: url(../images/navigation/extensions.png);
 }
 
-#navigation #navigation-learn a {
+body.extensions #navigation-extensions a {
+	background-position: -137px center;
+}
+
+#navigation-learn a {
 	background-image: url(../images/navigation/learn.png);
 }
 
-#navigation #navigation-community a {
+body.learn #navigation-learn a {
+	background-position: -137px center;
+}
+
+#navigation-community a {
 	background-image: url(../images/navigation/community.png);
 }
 
-#navigation #navigation-sponsors a {
+body.community #navigation-community a {
+	background-position: -137px center;
+}
+
+#navigation-sponsors a {
 	background-image: url(../images/navigation/sponsors.png);
 }
 
-#navigation #navigation-merchandise a {
+body.sponsors #navigation-sponsors a {
+	background-position: -137px center;
+}
+
+#navigation-merchandise a {
 	width: 138px;
 	background-image: url(../images/navigation/merchandise.png);
+}
+
+body.merchandise #navigation-merchandise a {
+	background-position: -137px center;
+}
+
+#selected-marker {
+	position: absolute;
+	width: 137px;
+	height: 24px;
+	bottom: -12px;
+	background: transparent url(../images/selected.png) no-repeat center top;
+}
+
+body.home #selected-marker {
+	display: none;
+}
+
+body.download #selected-marker {
+	left: 0px;
+}
+
+body.extensions #selected-marker {
+	left: 137px;
+}
+
+body.contribute #selected-marker {
+	left: 274px;
+}
+
+body.learn #selected-marker {
+	left: 411px;
+}
+
+body.community #selected-marker {
+	left: 548px;
+}
+
+body.sponsors #selected-marker {
+	left: 685px;
+}
+
+body.merchandise #selected-marker {
+	left: 822px;
 }
 
 #content {
@@ -167,6 +236,12 @@ p {
 	font-size: 1.8em;
 	line-height: 1.2em;
 	overflow: hidden;
+	margin-top: 8px;
+}
+
+#content a.external {
+	padding-right: 10px;
+	background: transparent url(../images/external-link.gif) no-repeat right center;
 }
 
 #footer {

@@ -21,7 +21,7 @@
 		<use content="scripts" />
 		
 	</head>
-	<body>
+	<body class="${CurrentController.ToLower()}">
 	
 		<div id="container">
 			<div id="top">
@@ -38,31 +38,47 @@
 				</div>
 				<ul id="navigation">
 					<li id="navigation-download"><a href="${Url.Action('show', 'download')}">Download it</a></li>
-					<li id="navigation-extensions"><a href="${Url.Action('show', 'extension')}">Extensions</a></li>
+					<li id="navigation-extensions"><a href="${Url.Action('show', 'extensions')}">Extensions</a></li>
 					<li id="navigation-contribute"><a href="${Url.Action('show', 'contribute')}">Contribute</a></li>
 					<li id="navigation-learn"><a href="${Url.Action('show', 'learn')}">Visit the Dojo</a></li>
 					<li id="navigation-community"><a href="${Url.Action('show', 'community')}">Speak up</a></li>
-					<li id="navigation-sponsors"><a href="${Url.Action('show', 'sponsor')}">Sponsors</a></li>
+					<li id="navigation-sponsors"><a href="${Url.Action('show', 'sponsors')}">Sponsors</a></li>
 					<li id="navigation-merchandise"><a href="${Url.Action('show', 'merchandise')}">Merchandise</a></li>
 				</ul>
+				<div id="selected-marker"></div>
 			</div>
 			<div id="content">
 				<use content="body" />
 			</div>
 		</div>
+		
 		<div id="footer" class="container_12">
 			<div class="section grid_12">
 				<div class="enkari">
 					<a href="http://enkari.com/" target="_blank">Enkari</a>
 				</div>
-				<p>
-					Ninject is the illegitimate brainchild of <a href="http://kohari.org/" target="_blank">Nate Kohari</a>.
-				</p>
-				<p>
-					Copyright &copy 2007-2009 <a href="http://enkari.com/" target="_blank">Enkari, Ltd.</a> and contributors.
-				</p>
+				Ninject is the illegitimate brainchild of <a href="http://kohari.org/" target="_blank">Nate Kohari</a>.<br />
+				Copyright &copy 2007-2009 <a href="http://enkari.com/" target="_blank">Enkari, Ltd.</a> and contributors.
 			</div>
 		</div>
+		
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+			try {
+				var pageTracker = _gat._getTracker("UA-501149-3");
+				pageTracker._trackPageview();
+			} catch(err) {}
+		</script>
+		
+		<!--[if IE 6]>
+		<script type="text/javascript"> 
+			var IE6UPDATE_OPTIONS = { icons_path: "http://static.ie6update.com/hosted/ie6update/images/" };
+		</script>
+		<script type="text/javascript" src="http://static.ie6update.com/hosted/ie6update/ie6update.js"></script>
+		<![endif]-->
 		
 	</body>
 </html>

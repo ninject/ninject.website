@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrapper.cs" />
+    <Compile Include="NinjectViewBase.cs" />
     <Compile Include="Extensions\ExtensionsForHtmlHelper.cs" />
     <Compile Include="Extensions\ExtensionsForXElement.cs" />
     <Compile Include="Filters\HandleExceptionsAttribute.cs" />

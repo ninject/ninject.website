@@ -19,9 +19,7 @@
 		</div>
 		
 		<div class="grid_12">
-			<div class="banner">
-				<h3>Binaries</h3>
-			</div>
+			<h3>Binaries</h3>
 		</div>
 		<div class="grid_6">
 			<div class="box">
@@ -61,9 +59,7 @@
 		</div>
 		
 		<div class="grid_12">
-			<div class="banner">
-				<h3>Source Code</h3>
-			</div>
+			<h3>Source Code</h3>
 		</div>
 		<div class="grid_12">
 			<div class="box">
@@ -86,9 +82,7 @@
 		</div>
 		
 		<div class="grid_12">
-			<div class="banner">
-				<h3>Older Versions</h3>
-			</div>
+			<h3>Older Versions</h3>
 		</div>
 		<div class="grid_12">
 			<div class="box">

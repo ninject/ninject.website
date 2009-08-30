@@ -13,7 +13,7 @@ var _routeTemplates = {
     "show": "/ninject/error/{code}",
     "shownotfound": "/ninject/{*url}"
   },
-  "extension": {
+  "extensions": {
     "show": "/ninject/extensions"
   },
   "home": {
@@ -25,7 +25,7 @@ var _routeTemplates = {
   "merchandise": {
     "show": "/ninject/merchandise"
   },
-  "sponsor": {
+  "sponsors": {
     "show": "/ninject/sponsors"
   }
 };
