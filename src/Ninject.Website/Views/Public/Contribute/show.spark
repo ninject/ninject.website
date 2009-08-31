@@ -25,7 +25,7 @@
 				<li>Submit patches for new features or integrations with other projects</li>
 				<li>Help edit the <a href="${Url.Action('show', 'learn')}">documentation</a></li>
 				<li>Write a tutorial or record a <a href="http://dimecasts.net">screencast</a> about how to use Ninject</li>
-				<li>Answer (or ask) questions on the <a href="${Url.Action('show', 'community')}">user group</a></li>
+				<li>Answer questions on the <a href="${Url.Action('show', 'community')}">user group</a></li>
 				<li>Contribute bug reports or ideas for improvements</li>
 			</ul>
 			<p>
@@ -41,7 +41,7 @@
 				license, meaning you can integrate it into commercial products <em>without ever paying a dime</em>.
 			</p>
 			<p>
-				If your business uses Ninject, there's plenty of ways you can give back to the project:
+				If your business uses Ninject, there are plenty of ways you can give back to the project:
 			</p>
 			<ul>
 				<li>Make a monetary donation, or <a href="mailto:sales@enkari.com">buy commercial support</a></li>

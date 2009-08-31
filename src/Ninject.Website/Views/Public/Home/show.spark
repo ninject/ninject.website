@@ -52,7 +52,7 @@
 			<h2>Be fast, be agile, be precise</h2>
 			Ninject makes dependency injection <em>so easy</em> that it becomes hard not to follow good practices. Once you start
 			writing your applications with dependency injection in mind, your code will be easier to understand, easier to change,
-			and less error-prone. Simply put, Ninject makes your application <em>more ninja-like</em>!
+			and less error-prone. Simply put, Ninject makes your application <em>more ninja-like!</em>
 		</div>
 	</div>
 	<div id="examples" class="container_12">

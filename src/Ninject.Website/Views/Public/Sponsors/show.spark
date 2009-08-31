@@ -14,23 +14,19 @@
 		</div>
 		<div class="grid_12">
 			<h3>Current sponsors</h3>
-			<div class="box">
-				<ul>
-					<li><a href="http://www.jetbrains.com/">JetBrains</a> for donating a project-wide <a href="http://www.jetbrains.com/resharper/">ReSharper</a> license.</li>
-					<li><a href="http://www.visualsvn.com/">VisualSVN</a> for donating a project-wide license.</li>
-					<li><a href="http://www.microsoft.com/">Microsoft</a> for donating an MSDN license.</li>
-					<li><a href="http://www.siblingsystems.com/">Ike Allred</a> for the sweet ninja illustrations.</li>
-				</ul>
-			</div>
+			<ul>
+				<li><a href="http://www.jetbrains.com/">JetBrains</a> for donating a project-wide <a href="http://www.jetbrains.com/resharper/">ReSharper</a> license.</li>
+				<li><a href="http://www.visualsvn.com/">VisualSVN</a> for donating a project-wide license.</li>
+				<li><a href="http://www.microsoft.com/">Microsoft</a> for donating an MSDN license.</li>
+				<li><a href="http://www.siblingsystems.com/">Ike Allred</a> for the sweet ninja illustrations.</li>
+			</ul>
 		</div>
 		<div class="grid_12">
 			<h3>Previous sponsors</h3>
-			<div class="box">
-				<ul>
-					<li><a href="http://www.theloungenet.com/">The Lounge</a> for hosting the project's website.</li>
-					<li><a href="http://www.atlassian.com/">Atlassian</a> for donating project-wide licenses for <a href="http://www.atlassian.com/software/confluence/">Confluence</a> and <a href="http://www.atlassian.com/software/jira/">JIRA</a>.</li>
-				</ul>
-			</div>
+			<ul>
+				<li><a href="http://www.theloungenet.com/">The Lounge</a> for hosting the project's website.</li>
+				<li><a href="http://www.atlassian.com/">Atlassian</a> for donating project-wide licenses for <a href="http://www.atlassian.com/software/confluence/">Confluence</a> and <a href="http://www.atlassian.com/software/jira/">JIRA</a>.</li>
+			</ul>
 		</div>
 	</div>
 </content>

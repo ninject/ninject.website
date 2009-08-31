@@ -54,20 +54,22 @@ h3 {
 	color: #fff;
 	background-color: #222;
 	padding: 6px 12px;
+	margin-bottom: 0.8em;
 }
 
 ul {
 	list-style-position: inside;
 	list-style-image: url(../images/shuriken.png);
-	margin: 0.4em 0.8em;
+	margin-left: 0.8em;
+	margin-bottom: 0.8em;
 }
 
 p {
-	margin: 0.8em 0em;
+	margin-bottom: 0.8em;
 }
 
 em {
-	color: #fff;
+	color: #eee;
 }
 
 .hover {
@@ -124,7 +126,7 @@ em {
 
 #footer {
 	font-size: 1.2em;
-	line-height: 1.1em;
+	line-height: 1.2em;
 	color: #aaa;
 	height: 60px;
 }

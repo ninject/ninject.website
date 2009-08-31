@@ -106,7 +106,7 @@
 	font-size: 0.9em;
 	line-height: 1.1em;
 	border-right: 2px dotted #222;
-	min-height: 160px;
+	padding-bottom: 12px;
 }
 
 #home #bottom .section.last {
@@ -115,7 +115,9 @@
 
 #home #bottom .section h3 {
 	color: #fff;
+	background-color: #111;
 	font-weight: normal;
 	font-size: 1.1em;
 	margin: 6px 0px;
+	padding: 0px;
 }
