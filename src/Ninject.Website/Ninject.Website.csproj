@@ -85,6 +85,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="Controllers\Public\CommunityController.cs" />
     <Compile Include="Controllers\Public\ContributeController.cs" />
     <Compile Include="Controllers\Public\SponsorsController.cs" />
@@ -102,8 +105,10 @@
     <Compile Include="NinjectWebsiteApplication.cs" />
     <Content Include="Data\web.config" />
     <Content Include="Content\web.config" />
+    <Content Include="Data\extensions.xml" />
     <None Include="Views\Public\Contribute\show.spark" />
     <None Include="Views\Public\Community\show.spark" />
+    <None Include="Views\Public\Merchandise\_product.spark" />
     <None Include="Views\Public\Merchandise\show.spark" />
     <None Include="Views\Public\Sponsors\show.spark" />
     <None Include="Views\Public\Learn\show.spark" />
@@ -120,6 +125,7 @@
     <Content Include="Global.asax" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\merchandise.css" />
     <Content Include="Content\css\navigation.css" />
     <Content Include="Content\css\headers.css" />
     <Content Include="Content\css\lib\960.css" />
@@ -161,13 +167,26 @@
     <Content Include="Content\js\lib\jquery.js" />
     <Content Include="Content\js\lib\shBrushCSharp.js" />
     <Content Include="Content\js\lib\shCore.js" />
+    <Content Include="Data\products.xml" />
     <Content Include="routes.config" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Ninject.Website.Data\Ninject.Website.Data.csproj">
+      <Project>{F80270F7-59A2-4716-A437-32626AA44037}</Project>
+      <Name>Ninject.Website.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Ninject.Website.Framework\Ninject.Website.Framework.csproj">
       <Project>{AA7B92B2-2752-4B42-AB58-ADABC9ED4205}</Project>
       <Name>Ninject.Website.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ninject.Website.Services.Persistence\Ninject.Website.Services.Persistence.csproj">
+      <Project>{06EACCCA-8362-42E6-9D59-77300CBBA9D6}</Project>
+      <Name>Ninject.Website.Services.Persistence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ninject.Website.Services\Ninject.Website.Services.csproj">
+      <Project>{67D577F3-F480-4114-ADBC-1147A4449CF2}</Project>
+      <Name>Ninject.Website.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

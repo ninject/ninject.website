@@ -12,7 +12,7 @@
 				Ninject is and will always be <em>free</em> and <em>open source</em>.
 			</div>
 		</div>
-		<div class="grid_12">
+		<div class="grid_8">
 			<h3>For Developers</h3>
 			<p>
 				Open source software lives and dies with the community surrounding it. As developers, <em>open source makes our jobs
@@ -32,6 +32,14 @@
 				Easiest of all, you can spread the word about Ninject! Write about it on your blog, or Twitter. Tell your friends
 				and co-workers, or offer to speak about dependency injection at a conference or your local user group.
 			</p>
+		</div>
+		<div class="grid_4">
+			<h3>Current Contributors</h3>
+			<ul>
+				<li><a href="http://kohari.org/">Nate Kohari</a></li>
+				<li><a href="http://disassembla.net/blog/">Ian Davis</a></li>
+				<li><a href="http://flanders.co.nz/">Ivan Porto Carrero</a></li>
+			</ul>
 		</div>
 		<div class="grid_12">
 			<h3>For Businesses</h3>

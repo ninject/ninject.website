@@ -9,17 +9,14 @@
 #endregion
 #region Using Directives
 using System;
-using System.Web.Mvc;
-using Ninject.Website.Framework;
+using System.Collections.ObjectModel;
+using System.Runtime.Serialization;
 #endregion
 
-namespace Ninject.Website.Controllers.Public
+namespace Ninject.Website.Data.Collections
 {
-	public class LearnController : NinjectControllerBase
+	[CollectionDataContract(Name = "products", Namespace = "", ItemName = "product")]
+	public class ProductCollection : Collection<Product>
 	{
-		public ViewResult Show()
-		{
-			return View();
-		}
 	}
 }

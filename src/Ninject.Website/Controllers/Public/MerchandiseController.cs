@@ -9,16 +9,27 @@
 #endregion
 #region Using Directives
 using System;
+using System.Linq;
 using System.Web.Mvc;
+using Ninject.Website.Data;
 using Ninject.Website.Framework;
+using Ninject.Website.Services.Persistence;
 #endregion
 
-namespace Ninject.Website.Controllers
+namespace Ninject.Website.Controllers.Public
 {
 	public class MerchandiseController : NinjectControllerBase
 	{
+		public IRepository<Product> ProductRepository { get; private set; }
+
+		public MerchandiseController(IRepository<Product> productRepository)
+		{
+			ProductRepository = productRepository;
+		}
+
 		public ViewResult Show()
 		{
+			ViewData["categories"] = ProductRepository.GetAll().OrderBy(product => product.Name).GroupBy(product => product.Category);
 			return View();
 		}
 	}

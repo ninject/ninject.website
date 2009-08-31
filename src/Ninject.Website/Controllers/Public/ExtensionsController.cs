@@ -9,16 +9,27 @@
 #endregion
 #region Using Directives
 using System;
+using System.Linq;
 using System.Web.Mvc;
+using Ninject.Website.Data;
 using Ninject.Website.Framework;
+using Ninject.Website.Services.Persistence;
 #endregion
 
-namespace Ninject.Website.Controllers
+namespace Ninject.Website.Controllers.Public
 {
 	public class ExtensionsController : NinjectControllerBase
 	{
+		public IRepository<Extension> ExtensionRepository { get; private set; }
+
+		public ExtensionsController(IRepository<Extension> extensionRepository)
+		{
+			ExtensionRepository = extensionRepository;
+		}
+
 		public ViewResult Show()
 		{
+			ViewData["extensions"] = ExtensionRepository.GetAll().OrderBy(extension => extension.Name);
 			return View();
 		}
 	}

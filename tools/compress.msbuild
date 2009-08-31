@@ -18,6 +18,7 @@
 			<CssFiles Include="$(CssDir)navigation.css"/>
 			<CssFiles Include="$(CssDir)headers.css"/>
 			<CssFiles Include="$(CssDir)home.css"/>
+			<CssFiles Include="$(CssDir)merchandise.css"/>
 		</ItemGroup>
 
 		<ItemGroup>

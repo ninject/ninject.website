@@ -13,7 +13,7 @@ using System.Web.Mvc;
 using Ninject.Website.Framework;
 #endregion
 
-namespace Ninject.Website.Controllers
+namespace Ninject.Website.Controllers.Public
 {
 	public class ContributeController : NinjectControllerBase
 	{

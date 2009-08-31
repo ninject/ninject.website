@@ -9,17 +9,15 @@
 #endregion
 #region Using Directives
 using System;
-using System.Web.Mvc;
-using Ninject.Website.Framework;
+using System.Linq;
+using System.Runtime.Serialization;
+using Ninject.Website.Data;
 #endregion
 
-namespace Ninject.Website.Controllers.Public
+namespace Ninject.Website.Services.Persistence
 {
-	public class LearnController : NinjectControllerBase
+	public interface IRepository<T>
 	{
-		public ViewResult Show()
-		{
-			return View();
-		}
+		IQueryable<T> GetAll();
 	}
 }

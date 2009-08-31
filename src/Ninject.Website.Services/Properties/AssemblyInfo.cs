@@ -1,4 +1,4 @@
-#region License
+﻿#region License
 // 
 // Author: Nate Kohari <nate@enkari.com>
 // Copyright (c) 2009, Enkari, Ltd.
@@ -8,18 +8,8 @@
 // 
 #endregion
 #region Using Directives
-using System;
-using System.Web.Mvc;
-using Ninject.Website.Framework;
+using System.Reflection;
 #endregion
 
-namespace Ninject.Website.Controllers.Public
-{
-	public class LearnController : NinjectControllerBase
-	{
-		public ViewResult Show()
-		{
-			return View();
-		}
-	}
-}
+[assembly: AssemblyTitle("Ninject.Website.Services")]
+[assembly: AssemblyDescription("Service contracts for the Ninject website")]

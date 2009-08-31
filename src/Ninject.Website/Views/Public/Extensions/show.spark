@@ -1,11 +1,46 @@
 <use master="main" />
+<viewdata extensions="IEnumerable[[Extension]]" />
 
 <content name="title">Extensions</content>
 
 <content name="body">
+
 	<h2 class="section-header">
 		Extensions from the community
 	</h2>
+	
 	<div id="grid-container" class="container_12">
+	
+		<div class="grid_12">
+			<div class="note">
+				Got a cool extension for Ninject that you want to share? Let us know, and we'll list it here.
+			</div>
+		</div>
+		
+		<div class="grid_12">
+			<div each="var extension in extensions" class="extension">
+				<h3>${extension.Name}</h3>
+				<p>
+					${extension.Description}
+				</p>
+				<ul>
+					<li>
+						<strong>Author:</strong>
+						<if condition="extension.Author.Email == null">
+							${extension.Author.Name}
+						</if>
+						<else>
+							<a href="mailto:${extension.Author.Email}">${extension.Author.Name}</a>
+						</else>
+					</li>
+					<li>
+						<strong>Website:</strong>
+						<a href="${extension.Website}">${extension.Website}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
 	</div>
+	
 </content>

@@ -13,6 +13,7 @@ using CommonServiceLocator.NinjectAdapter;
 using Microsoft.Practices.ServiceLocation;
 using Ninject.Web.Mvc;
 using Ninject.Website.Framework;
+using Ninject.Website.Services.Persistence;
 using Spark.Web.Mvc;
 #endregion
 
@@ -37,6 +38,8 @@ namespace Ninject.Website
 		protected override IKernel CreateKernel()
 		{
 			var kernel = new StandardKernel();
+
+			kernel.Load<PersistenceModule>();
 
 			return kernel;
 		}
