@@ -15,14 +15,9 @@
 			<CssFiles Include="$(CssDir)lib/reset.css"/>
 			<CssFiles Include="$(CssDir)lib/shCore.css"/>
 			<CssFiles Include="$(CssDir)layout.css"/>
+			<CssFiles Include="$(CssDir)navigation.css"/>
+			<CssFiles Include="$(CssDir)headers.css"/>
 			<CssFiles Include="$(CssDir)home.css"/>
-			<CssFiles Include="$(CssDir)community.css"/>
-			<CssFiles Include="$(CssDir)contribute.css"/>
-			<CssFiles Include="$(CssDir)download.css"/>
-			<CssFiles Include="$(CssDir)extensions.css"/>
-			<CssFiles Include="$(CssDir)learn.css"/>
-			<CssFiles Include="$(CssDir)merchandise.css"/>
-			<CssFiles Include="$(CssDir)sponsors.css"/>
 		</ItemGroup>
 
 		<ItemGroup>

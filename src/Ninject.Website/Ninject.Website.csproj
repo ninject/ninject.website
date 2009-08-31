@@ -120,13 +120,8 @@
     <Content Include="Global.asax" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\css\contribute.css" />
-    <Content Include="Content\css\community.css" />
-    <Content Include="Content\css\merchandise.css" />
-    <Content Include="Content\css\sponsors.css" />
-    <Content Include="Content\css\learn.css" />
-    <Content Include="Content\css\extensions.css" />
-    <Content Include="Content\css\download.css" />
+    <Content Include="Content\css\navigation.css" />
+    <Content Include="Content\css\headers.css" />
     <Content Include="Content\css\lib\960.css" />
     <Content Include="Content\css\home.css" />
     <Content Include="Content\css\layout.css" />

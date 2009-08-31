@@ -7,5 +7,47 @@
 		Contribute to the project
 	</h2>
 	<div id="grid-container" class="container_12">
+		<div class="grid_12">
+			<div class="note">
+				Ninject is and will always be <em>free</em> and <em>open source</em>.
+			</div>
+		</div>
+		<div class="grid_12">
+			<h3>For Developers</h3>
+			<p>
+				Open source software lives and dies with the community surrounding it. As developers, <em>open source makes our jobs
+				easier</em>, and supporting it doesn't necessarily mean you have to get your wallet out!
+			</p>
+			<p>
+				There are lots of way to help:
+			</p>
+			<ul>
+				<li>Submit patches for new features or integrations with other projects</li>
+				<li>Help edit the <a href="${Url.Action('show', 'learn')}">documentation</a></li>
+				<li>Write a tutorial or record a <a href="http://dimecasts.net">screencast</a> about how to use Ninject</li>
+				<li>Answer (or ask) questions on the <a href="${Url.Action('show', 'community')}">user group</a></li>
+				<li>Contribute bug reports or ideas for improvements</li>
+			</ul>
+			<p>
+				Easiest of all, you can spread the word about Ninject! Write about it on your blog, or Twitter. Tell your friends
+				and co-workers, or offer to speak about dependency injection at a conference or your local user group.
+			</p>
+		</div>
+		<div class="grid_12">
+			<h3>For Businesses</h3>
+			<p>
+				Open source isn't just about freedom! Commercial businesses can leverage open source software to become
+				<em>more efficient</em> and <em>avoid re-inventing the wheel</em>. Ninject is available under a business-friendly
+				license, meaning you can integrate it into commercial products <em>without ever paying a dime</em>.
+			</p>
+			<p>
+				If your business uses Ninject, there's plenty of ways you can give back to the project:
+			</p>
+			<ul>
+				<li>Make a monetary donation, or <a href="mailto:sales@enkari.com">buy commercial support</a></li>
+				<li>Blog about your success with Ninject on your corporate blog</li>
+				<li>Write a whitepaper about the advantage Ninject provided your business</li>
+			</ul>
+		</div>
 	</div>
 </content>

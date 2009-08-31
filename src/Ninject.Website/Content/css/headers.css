@@ -1,0 +1,27 @@
+#community h2.section-header {
+	background-image: url(../images/headers/community.png);
+}
+
+#contribute h2.section-header {
+	background-image: url(../images/headers/contribute.png);
+}
+
+#download h2.section-header {
+	background-image: url(../images/headers/download.png);
+}
+
+#extensions h2.section-header {
+	background-image: url(../images/headers/extensions.png);
+}
+
+#learn h2.section-header {
+	background-image: url(../images/headers/learn.png);
+}
+
+#merchandise h2.section-header {
+	background-image: url(../images/headers/merchandise.png);
+}
+
+#sponsors h2.section-header {
+	background-image: url(../images/headers/sponsors.png);
+}

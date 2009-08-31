@@ -17,7 +17,7 @@
 		<use content="header" />
 		
 	</head>
-	<body class="${CurrentController.ToLower()}">
+	<body id="${CurrentController.ToLower()}">
 	
 		<div id="container">
 			<div id="top">
@@ -53,8 +53,9 @@
 				<div class="enkari">
 					<a href="http://enkari.com/" target="_blank">Enkari</a>
 				</div>
-				Ninject is the illegitimate brainchild of <a href="http://kohari.org/" target="_blank">Nate Kohari</a>.<br />
-				Copyright &copy 2007-2009 <a href="http://enkari.com/" target="_blank">Enkari, Ltd.</a> and contributors.
+				Ninject is the illegitimate brainchild of <a href="http://kohari.org/" target="_blank">Nate Kohari</a>.
+				Copyright &copy;2007-2009 <a href="http://enkari.com/" target="_blank">Enkari, Ltd.</a> and contributors.<br />
+				This website is open source! Go see how the giant <a href="http://github.com/enkari/ninject.website">hamster wheel</a> turns.
 			</div>
 		</div>
 		
