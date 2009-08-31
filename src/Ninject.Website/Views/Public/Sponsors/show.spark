@@ -2,10 +2,6 @@
 
 <content name="title">Sponsors</content>
 
-<content name="stylesheets">
-	${Html.Stylesheet("~/content/css/sponsors.css")}
-</content>
-
 <content name="body">
 	<h2 class="section-header">
 		Thank our sponsors!

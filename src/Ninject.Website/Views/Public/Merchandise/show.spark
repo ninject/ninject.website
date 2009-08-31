@@ -2,10 +2,6 @@
 
 <content name="title">Merchandise</content>
 
-<content name="stylesheets">
-	${Html.Stylesheet("~/content/css/merchandise.css")}
-</content>
-
 <content name="body">
 	<h2 class="section-header">
 		Get some killer merchandise

@@ -1,7 +1,6 @@
 #cards {
 	width: 796px;
-	height: 130px;
-	margin: 52px 86px 60px 86px;
+	margin: 60px 86px;
 }
 
 .arrow {
@@ -36,6 +35,7 @@
 
 #cards .card {
 	width: 100%;
+	height: 130px;
 	background-color: #111;
 }
 
@@ -62,7 +62,7 @@
 }
 
 #cards #card-3 h2 {
-	background-image: url(../images/headers/cards/use-your-most-powerful-tools.png);
+	background-image: url(../images/headers/cards/use-your-sharpest-tools.png);
 }
 
 #cards #card-4 h2 {
@@ -84,12 +84,10 @@
 
 .code-sample {
 	border-right: 2px dotted #222;
-	margin-right: -2px;
 }
 
 .code-sample.last {
 	border-right: 0px;
-	margin-right: 0px;
 }
 
 .code-sample h3 {
@@ -101,7 +99,8 @@
 }
 
 #bottom {
-	padding: 12px 0px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 	overflow: hidden;
 	color: #bbb;
 }
@@ -110,13 +109,11 @@
 	font-size: 0.9em;
 	line-height: 1.1em;
 	border-right: 2px dotted #222;
-	margin-right: -2px;
 	min-height: 160px;
 }
 
 #bottom .section.last {
 	border-right: 0px;
-	margin-right: 0px;
 }
 
 #bottom .section h3 {

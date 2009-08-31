@@ -5,20 +5,16 @@
 	
 		<title><use content="title" /> - Ninject</title>
 		
-		${Html.Stylesheet("~/content/css/lib/reset.css")}
-		${Html.Stylesheet("~/content/css/lib/960.css")}
-		${Html.Stylesheet("~/content/css/layout.css")}
-		<use content="stylesheets" />
+		${Html.Stylesheet("~/content/css/bundle.css")}
+		${Html.Script("~/content/js/bundle.js")}
 		
-		${Html.Script("~/content/js/lib/jquery.js")}
-		${Html.Script("~/content/js/lib/browser.js")}
-		${Html.Script("~/content/js/common.js")}
 		<script type="text/javascript">
 			$(function() {
 				$("#navigation li a,.enkari a").hoverFade("fast");
 			});
 		</script>
-		<use content="scripts" />
+		
+		<use content="header" />
 		
 	</head>
 	<body class="${CurrentController.ToLower()}">

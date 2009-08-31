@@ -2,10 +2,6 @@
 
 <content name="title">Learn</content>
 
-<content name="stylesheets">
-	${Html.Stylesheet("~/content/css/learn.css")}
-</content>
-
 <content name="body">
 	<h2 class="section-header">
 		Learn more about Ninject

@@ -30,5 +30,10 @@ namespace Ninject.Website.Framework
 		{
 			get { return ViewContext.RouteData.GetRequiredString("action"); }
 		}
+
+		public bool IsDebug
+		{
+			get { return Context.IsDebuggingEnabled; }
+		}
 	}
 }

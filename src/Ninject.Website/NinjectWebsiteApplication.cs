@@ -22,10 +22,10 @@ namespace Ninject.Website
 	{
 		protected override void OnApplicationStarted()
 		{
-			RegisterAllControllersIn("Ninject.Website");
-
 			var serviceLocator = new NinjectServiceLocator(Kernel);
 			ServiceLocator.SetLocatorProvider(() => serviceLocator);
+
+			RegisterAllControllersIn("Ninject.Website");
 
 			var bootstrapper = Kernel.Get<Bootstrapper>();
 

@@ -2,16 +2,7 @@
 
 <content name="title">Open source dependency injector for .NET</content>
 
-<content name="stylesheets">
-	${Html.Stylesheet("~/content/css/lib/shCore.css")}
-	${Html.Stylesheet("~/content/css/home.css")}
-</content>
-
-<content name="scripts">
-	${Html.Script("~/content/js/lib/jquery.cycle.js")}
-	${Html.Script("~/content/js/lib/jquery.easing.js")}
-	${Html.Script("~/content/js/lib/shCore.js")}
-	${Html.Script("~/content/js/lib/shBrushCSharp.js")}
+<content name="header">
 	<script type="text/javascript">
 		$(function() {
 			$("#cards").cycle({
@@ -46,16 +37,16 @@
 			a "small" change to your application, you can <em>laugh in triumph</em> rather than quivering in pain.
 		</div>
 		<div id="card-3" class="card">
-			<h2>Use your most powerful tools</h2>
+			<h2>Use your sharpest tools</h2>
 			Once you break your application into components, you have to glue them back together. Rather than depending on a bunch of
 			XML to describe how the pieces fit together, Ninject uses a powerful <em>fluent interface</em>. This lets you get the
-			most out of tools that you're already using, like your compiler and your IDE.
+			most out of the sharpest tools in your arsenal: your compiler and your IDE.
 		</div>
 		<div id="card-4" class="card">
 			<h2>Write smarter software everywhere</h2>
 			Dependency injection isn't just for big enterprise applications; with the right framework, you can apply the practice to
 			improve software projects of <em>all sizes and types</em>. Ninject was designed to be ultra-lightweight and universal.
-			It also <em>runs pretty much anywhere</em>, including on Mono, the .NET Compact Framework, and Silverlight.
+			It also <em>runs practically anywhere</em>, including on Mono, the .NET Compact Framework, and Silverlight.
 		</div>
 		<div id="card-5" class="card">
 			<h2>Be fast, be agile, be precise</h2>
@@ -65,46 +56,56 @@
 		</div>
 	</div>
 	<div id="examples" class="container_12">
-		<div class="code-sample grid_6">
-			<h3>Write your code so it's flexible...</h3>
-			<pre class="brush:csharp">
-				public class Samurai {
-					public IWeapon Weapon { get; private set; }
-					public Samurai(IWeapon weapon) {
-						Weapon = weapon;
+		<div class="grid_6">
+			<div class="code-sample">
+				<h3>Write your code so it's flexible...</h3>
+				<pre class="brush:csharp">
+					public class Samurai {
+						public IWeapon Weapon { get; private set; }
+						public Samurai(IWeapon weapon) {
+							Weapon = weapon;
+						}
 					}
-				}
-			</pre>
+				</pre>
+			</div>
 		</div>
-		<div class="last code-sample grid_6">
-			<h3>...and let Ninject glue it together for you.</h3>
-			<pre class="brush:csharp">
-				public class WarriorModule : NinjectModule {
-					public override void Load() {
-						Bind&lt;IWeapon&gt;.To&lt;Sword&gt;();
+		<div class="grid_6">
+			<div class="last code-sample">
+				<h3>...and let Ninject glue it together for you.</h3>
+				<pre class="brush:csharp">
+					public class WarriorModule : NinjectModule {
+						public override void Load() {
+							Bind&lt;IWeapon&gt;.To&lt;Sword&gt;();
+						}
 					}
-				}
-			</pre>
+				</pre>
+			</div>
 		</div>
 	</div>
 	<div id="bottom" class="container_12">
-		<div class="section grid_4">
-			<h3>Why is Ninject useful?</h3>
-			The vast majority of effort that is invested in software happens <em>after the initial release</em>. Because
-			Ninject makes your software much <em>easier to change</em>, a small up-front time investment will pay huge
-			dividends as time goes on.
+		<div class="grid_4">
+			<div class="section">
+				<h3>Why is Ninject useful?</h3>
+				The vast majority of effort that is invested in software happens <em>after the initial release</em>. Because
+				Ninject makes your software much <em>easier to change</em>, a small up-front time investment will pay huge
+				dividends as time goes on.
+			</div>
 		</div>
-		<div class="section grid_4">
-			<h3>What makes Ninject different?</h3>
-			An obsessive focus on <em>simplicity</em> and <em>ease of use</em>. We've seen the value of dependency
-			injection, but were frustrated by the complexity of existing solutions. The goal of Ninject is make dependency
-			injection accessible to <em>all developers</em> and <em>all projects</em>.
+		<div class="grid_4">
+			<div class="section">
+				<h3>What makes Ninject different?</h3>
+				An obsessive focus on <em>simplicity</em> and <em>ease of use</em>. We've seen the value of dependency
+				injection, but were frustrated by the complexity of existing solutions. The goal of Ninject is make dependency
+				injection accessible to <em>all developers</em> and <em>all projects</em>.
+			</div>
 		</div>
-		<div class="last section grid_4">
-			<h3>How much does it cost?</h3>
-			Ninject is and will always be <em>free</em> for both personal and commercial projects. It's also <em>open source</em>,
-			so you can fork <a href="http://github.com/enkari/ninject" target="_blank">the code</a> and make any changes
-			you like. (We appreciate it if you share anything useful you come up with us, though!)
+		<div class="grid_4">
+			<div class="last section">
+				<h3>How much does it cost?</h3>
+				Ninject is and will always be <em>free</em> for both personal and commercial projects. It's also <em>open source</em>,
+				so you can fork <a href="http://github.com/enkari/ninject" target="_blank">the code</a> and make any changes
+				you like. (We appreciate it if you share anything useful you come up with us, though!)
+			</div>
 		</div>
 	</div>
 </content>

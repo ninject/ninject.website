@@ -2,10 +2,6 @@
 
 <content name="title">Contribute</content>
 
-<content name="stylesheets">
-	${Html.Stylesheet("~/content/css/contribute.css")}
-</content>
-
 <content name="body">
 	<h2 class="section-header">
 		Contribute to the project
