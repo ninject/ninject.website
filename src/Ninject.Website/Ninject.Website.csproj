@@ -157,6 +157,7 @@
     <Content Include="Content\images\navigation\community.png" />
     <Content Include="Content\images\navigation\sponsors.png" />
     <Content Include="Content\images\selected.png" />
+    <Content Include="Content\images\shuriken.png" />
     <Content Include="Content\images\splash.png" />
     <Content Include="Content\js\common.js" />
     <Content Include="Content\js\lib\browser.js" />

@@ -50,8 +50,8 @@ h2.section-header {
 }
 
 ul {
-	list-style-type: disc;
 	list-style-position: inside;
+	list-style-image: url(../images/shuriken.png);
 	margin: 0.4em 0.8em;
 }
 
