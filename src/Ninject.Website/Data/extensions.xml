@@ -11,7 +11,7 @@
 		<description>
 			<![CDATA[
 			Allows integration between Ninject and <a href="http://asp.net/mvc">ASP.NET MVC</a>.
-			(It powers this website! Check out <a href="http://github.com/enkari/ninject.website">the website's source</a> to see how.)
+			(It powers this website! Check out <a href="http://github.com/enkari/ninject.website">the source</a> to see how.)
 			]]>
 		</description>
 	</extension>

@@ -22,18 +22,20 @@ namespace Ninject.Website.Services.Persistence
 {
 	public class XmlExtensionRepository : IRepository<Extension>
 	{
-		private const string Filename = "~/data/extensions.xml";
-		private readonly ExtensionCollection _items;
+		private const string RelativePath = "~/data/extensions.xml";
+
+		public string Filename { get; private set; }
+		public XmlLoader Loader { get; private set; }
 
 		public XmlExtensionRepository(HttpContextBase httpContext, XmlLoader loader)
 		{
-			string path = httpContext.Server.MapPath(Filename);
-			_items = loader.Load<ExtensionCollection>(path);
+			Filename = httpContext.Server.MapPath(RelativePath);
+			Loader = loader;
 		}
 
 		public IQueryable<Extension> GetAll()
 		{
-			return _items.AsQueryable();
+			return Loader.Load<ExtensionCollection>(Filename).AsQueryable();
 		}
 	}
 }

@@ -125,12 +125,12 @@
     <Content Include="Global.asax" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\css\merchandise.css" />
-    <Content Include="Content\css\navigation.css" />
-    <Content Include="Content\css\headers.css" />
+    <None Include="Content\css\merchandise.less" />
+    <None Include="Content\css\navigation.less" />
+    <None Include="Content\css\headers.less" />
     <Content Include="Content\css\lib\960.css" />
-    <Content Include="Content\css\home.css" />
-    <Content Include="Content\css\layout.css" />
+    <None Include="Content\css\home.less" />
+    <None Include="Content\css\layout.less" />
     <Content Include="Content\css\lib\reset.css" />
     <Content Include="Content\css\lib\shCore.css" />
     <Content Include="Content\images\arrow-left.png" />
@@ -221,6 +221,6 @@
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup>
-    <PostBuildEvent>$(MSBuildBinPath)\msbuild.exe "$(SolutionDir)tools\compress.msbuild" /p:CssDir="$(ProjectDir)content/css/" /p:JsDir="$(ProjectDir)content/js/"</PostBuildEvent>
+    <PostBuildEvent>rake minify</PostBuildEvent>
   </PropertyGroup>
 </Project>

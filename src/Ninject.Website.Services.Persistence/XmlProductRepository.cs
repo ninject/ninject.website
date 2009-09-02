@@ -22,18 +22,20 @@ namespace Ninject.Website.Services.Persistence
 {
 	public class XmlProductRepository : IRepository<Product>
 	{
-		private const string Filename = "~/data/products.xml";
-		private readonly ProductCollection _items;
+		private const string RelativePath = "~/data/products.xml";
+
+		public string Filename { get; private set; }
+		public XmlLoader Loader { get; private set; }
 
 		public XmlProductRepository(HttpContextBase httpContext, XmlLoader loader)
 		{
-			string path = httpContext.Server.MapPath(Filename);
-			_items = loader.Load<ProductCollection>(path);
+			Filename = httpContext.Server.MapPath(RelativePath);
+			Loader = loader;
 		}
 
 		public IQueryable<Product> GetAll()
 		{
-			return _items.AsQueryable();
+			return Loader.Load<ProductCollection>(Filename).AsQueryable();
 		}
 	}
 }
