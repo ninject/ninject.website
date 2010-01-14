@@ -2,35 +2,6 @@
 <extensions>
 
 	<extension>
-		<name>Ninject.Web.Mvc</name>
-		<website>http://github.com/enkari/ninject.web.mvc</website>
-		<author>
-			<name>Nate Kohari</name>
-			<email>nate@enkari.com</email>
-		</author>
-		<description>
-			<![CDATA[
-			Allows integration between Ninject and <a href="http://asp.net/mvc">ASP.NET MVC</a>.
-			(It powers this website! Check out <a href="http://github.com/enkari/ninject.website">the source</a> to see how.)
-			]]>
-		</description>
-	</extension>
-
-	<extension>
-		<name>Ninject.Moq</name>
-		<website>http://github.com/enkari/ninject.moq</website>
-		<author>
-			<name>Nate Kohari</name>
-			<email>nate@enkari.com</email>
-		</author>
-		<description>
-			<![CDATA[
-			Provides auto-mocking container support for <a href="http://moq.me/">Moq</a>.
-			]]>
-		</description>
-	</extension>
-
-	<extension>
 		<name>Ninject.Dynamic</name>
 		<website>http://github.com/casualjim/ninject-dynamic</website>
 		<author>
@@ -44,10 +15,53 @@
 	</extension>
 
 	<extension>
-		<name>Ninject.Extensions.MessageBroker</name>
-		<website>https://github.com/idavis/ninject.extensions.messagebroker</website>
+		<name>Ninject.Extensions.Conventions</name>
+		<website>http://github.com/idavis/ninject.extensions.conventions</website>
 		<author>
 			<name>Ian Davis</name>
+			<email>ian@innovatian.com</email>
+		</author>
+		<description>
+			<![CDATA[
+			Provides convention based binding for Ninject modeled after the StructureMap 2.5 AssemblyScanner by Jeremy Miller.
+			]]>
+		</description>
+	</extension>
+
+	<extension>
+		<name>Ninject.Extensions.Interception</name>
+		<website>http://github.com/idavis/ninject.extensions.interception</website>
+		<author>
+			<name>Ian Davis</name>
+			<email>ian@innovatian.com</email>
+		</author>
+		<description>
+			<![CDATA[
+			Originally by Nate Kohari, ported to Ninject 2.0 and enhanced by Ian Davis
+			]]>
+		</description>
+	</extension>
+
+	<extension>
+		<name>Ninject.Extensions.Logging</name>
+		<website>http://github.com/idavis/ninject.extensions.logging</website>
+		<author>
+			<name>Ian Davis</name>
+			<email>ian@innovatian.com</email>
+		</author>
+		<description>
+			<![CDATA[
+			Originally by Nate Kohari, ported to Ninject 2.0 by Ian Davis.
+			]]>
+		</description>
+	</extension>
+
+	<extension>
+		<name>Ninject.Extensions.MessageBroker</name>
+		<website>http://github.com/idavis/ninject.extensions.messagebroker</website>
+		<author>
+			<name>Ian Davis</name>
+			<email>ian@innovatian.com</email>
 		</author>
 		<description>
 			<![CDATA[
@@ -62,6 +76,7 @@
 		<website>https://github.com/idavis/ninject.extensions.wcf</website>
 		<author>
 			<name>Ian Davis</name>
+			<email>ian@innovatian.com</email>
 		</author>
 		<description>
 			<![CDATA[
@@ -71,10 +86,40 @@
 	</extension>
 
 	<extension>
+		<name>Ninject.Extensions.WeakEventMessageBroker</name>
+		<website>http://github.com/idavis/ninject.extensions.weakeventmessagebroker</website>
+		<author>
+			<name>Ian Davis</name>
+			<email>ian@innovatian.com</email>
+		</author>
+		<description>
+			<![CDATA[
+			Allows a many-to-many publish/subscribe model between loosely-coupled components held together by weaks events to automatically 
+			disconnect publishers/subscribers. Originally based on Ninject.Extensions.MessageBroker.
+			]]>
+		</description>
+	</extension>
+
+		<extension>
+		<name>Ninject.Moq</name>
+		<website>http://github.com/enkari/ninject.moq</website>
+		<author>
+			<name>Nate Kohari</name>
+			<email>nate@enkari.com</email>
+		</author>
+		<description>
+			<![CDATA[
+			Provides auto-mocking container support for <a href="http://moq.me/">Moq</a>.
+			]]>
+		</description>
+	</extension>
+
+	<extension>
 		<name>Ninject.Web</name>
 		<website>https://github.com/idavis/ninject.web</website>
 		<author>
 			<name>Ian Davis</name>
+			<email>ian@innovatian.com</email>
 		</author>
 		<description>
 			<![CDATA[
@@ -84,4 +129,34 @@
 		</description>
 	</extension>
 
+	<extension>
+		<name>Ninject.Web.Mvc</name>
+		<website>http://github.com/enkari/ninject.web.mvc</website>
+		<author>
+			<name>Nate Kohari</name>
+			<email>nate@enkari.com</email>
+		</author>
+		<description>
+			<![CDATA[
+			Allows integration between Ninject and <a href="http://asp.net/mvc">ASP.NET MVC</a>.
+			(It powers this website! Check out <a href="http://github.com/enkari/ninject.website">the source</a> to see how.)
+			]]>
+		</description>
+	</extension>
+
+<!--
+	<extension>
+		<name>Ninject.Extensions.*</name>
+		<website></website>
+		<author>
+			<name></name>
+			<email></email>
+		</author>
+		<description>
+			<![CDATA[
+			
+			]]>
+		</description>
+	</extension>
+-->
 </extensions>

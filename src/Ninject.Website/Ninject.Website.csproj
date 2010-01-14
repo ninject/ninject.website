@@ -35,6 +35,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\CommonServiceLocator.NinjectAdapter.dll</HintPath>
     </Reference>
+    <Reference Include="Elmah, Version=1.1.11228.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Elmah.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\Microsoft.Practices.ServiceLocation.dll</HintPath>
@@ -168,7 +172,9 @@
     <Content Include="Content\js\lib\shBrushCSharp.js" />
     <Content Include="Content\js\lib\shCore.js" />
     <Content Include="Data\products.xml" />
-    <Content Include="routes.config" />
+    <Content Include="routes.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
