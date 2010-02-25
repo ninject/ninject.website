@@ -110,18 +110,18 @@
     <Content Include="Data\web.config" />
     <Content Include="Content\web.config" />
     <Content Include="Data\extensions.xml" />
-    <None Include="Views\Public\Contribute\show.spark" />
-    <None Include="Views\Public\Community\show.spark" />
-    <None Include="Views\Public\Merchandise\_product.spark" />
-    <None Include="Views\Public\Merchandise\show.spark" />
-    <None Include="Views\Public\Sponsors\show.spark" />
-    <None Include="Views\Public\Learn\show.spark" />
-    <None Include="Views\Public\Extensions\show.spark" />
-    <None Include="Views\Public\Download\show.spark" />
-    <None Include="Views\Public\Error\error500.spark" />
-    <None Include="Views\Public\Error\error404.spark" />
-    <None Include="Views\Public\Home\show.spark" />
-    <None Include="Views\Shared\main.spark" />
+    <Content Include="Views\Public\Contribute\show.spark" />
+    <Content Include="Views\Public\Community\show.spark" />
+    <Content Include="Views\Public\Merchandise\_product.spark" />
+    <Content Include="Views\Public\Merchandise\show.spark" />
+    <Content Include="Views\Public\Sponsors\show.spark" />
+    <Content Include="Views\Public\Learn\show.spark" />
+    <Content Include="Views\Public\Extensions\show.spark" />
+    <Content Include="Views\Public\Download\show.spark" />
+    <Content Include="Views\Public\Error\error500.spark" />
+    <Content Include="Views\Public\Error\error404.spark" />
+    <Content Include="Views\Public\Home\show.spark" />
+    <Content Include="Views\Shared\main.spark" />
     <Content Include="Views\web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +132,7 @@
     <None Include="Content\css\merchandise.less" />
     <None Include="Content\css\navigation.less" />
     <None Include="Content\css\headers.less" />
+    <Content Include="Content\css\bundle.css" />
     <Content Include="Content\css\lib\960.css" />
     <None Include="Content\css\home.less" />
     <None Include="Content\css\layout.less" />
@@ -164,6 +165,7 @@
     <Content Include="Content\images\selected.png" />
     <Content Include="Content\images\shuriken.png" />
     <Content Include="Content\images\splash.png" />
+    <Content Include="Content\js\bundle.js" />
     <Content Include="Content\js\common.js" />
     <Content Include="Content\js\lib\browser.js" />
     <Content Include="Content\js\lib\jquery.cycle.js" />

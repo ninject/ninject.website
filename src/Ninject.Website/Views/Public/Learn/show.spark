@@ -3,9 +3,30 @@
 <content name="title">Learn</content>
 
 <content name="body">
+
 	<h2 class="section-header">
 		Learn more about Ninject
 	</h2>
+	
 	<div id="grid-container" class="container_12">
+	
+		<div class="grid_12">
+			<p>
+				The best place to learn about Ninject is from the <a href="http://wiki.github.com/enkari/ninject">official wiki</a> on Github.
+			</p>
+			<p>
+				Additional resources:
+			</p>
+			<ul>
+				<li><a href="http://kohari.org">Nate's blog</a></li>
+				<li><a href="http://innovatian.com/blog/">Ian's blog</a></li>
+				<li><a href="http://stackoverflow.com/tags/ninject">Stack Overflow questions tagged with "ninject"</a></li>
+			</ul>
+			<p>
+				If you'd like to make additions to the wiki, or you have additional resources you'd like listed, please let us know!
+			</p>
+		</div>
+	
 	</div>
+	
 </content>

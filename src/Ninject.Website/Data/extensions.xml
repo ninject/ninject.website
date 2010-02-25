@@ -100,7 +100,21 @@
 		</description>
 	</extension>
 
-		<extension>
+	<extension>
+		<name>Ninject.Extensions.Xml</name>
+		<website>http://github.com/enkari/ninject.extensions.xml</website>
+		<author>
+			<name>Nate Kohari</name>
+			<email>nate@enkari.com</email>
+		</author>
+		<description>
+			<![CDATA[
+			Allows users to define bindings using XML rather than code.
+			]]>
+		</description>
+	</extension>
+
+	<extension>
 		<name>Ninject.Moq</name>
 		<website>http://github.com/enkari/ninject.moq</website>
 		<author>

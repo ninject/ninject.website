@@ -39,19 +39,18 @@
             </summary>
             <param name="kernel">The kernel that should be used to create controllers.</param>
         </member>
-        <member name="M:Ninject.Web.Mvc.NinjectControllerFactory.CreateController(System.Web.Routing.RequestContext,System.String)">
+        <member name="M:Ninject.Web.Mvc.NinjectControllerFactory.GetControllerInstance(System.Type)">
             <summary>
-            Creates the controller with the specified name.
+            Gets a controller instance of type controllerType.
             </summary>
-            <param name="requestContext">The request context.</param>
-            <param name="controllerName">Name of the controller.</param>
-            <returns>The created controller.</returns>
+            <param name="controllerType">Type of controller to create.</param>
+            <returns>The controller instance.</returns>
         </member>
-        <member name="M:Ninject.Web.Mvc.NinjectControllerFactory.ReleaseController(System.Web.Mvc.IController)">
+        <member name="M:Ninject.Web.Mvc.NinjectControllerFactory.CreateActionInvoker">
             <summary>
-            Releases the specified controller.
+            Creates the action invoker.
             </summary>
-            <param name="controller">The controller to release.</param>
+            <returns>The action invoker.</returns>
         </member>
         <member name="P:Ninject.Web.Mvc.NinjectControllerFactory.Kernel">
             <summary>
@@ -104,6 +103,12 @@
             Creates the kernel that will manage your application.
             </summary>
             <returns>The created kernel.</returns>
+        </member>
+        <member name="M:Ninject.Web.Mvc.NinjectHttpApplication.CreateControllerFactory">
+            <summary>
+            Creates the controller factory that is used to create the controllers.
+            </summary>
+            <returns>The created controller factory.</returns>
         </member>
         <member name="M:Ninject.Web.Mvc.NinjectHttpApplication.OnApplicationStarted">
             <summary>

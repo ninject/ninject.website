@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!doctype html>
 
 <html>
 	<head>
@@ -58,6 +58,10 @@
 				This website is <a href="http://github.com/enkari/ninject.website">open source</a>! Go see how the giant hamster wheel turns.
 			</div>
 		</div>
+		
+		<a href="http://github.com/enkari/ninject">
+			<img style="position: absolute; top: 0; left: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png" alt="Fork me on GitHub" />
+		</a>
 		
 		<script type="text/javascript">
 			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

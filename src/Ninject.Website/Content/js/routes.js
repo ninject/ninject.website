@@ -1,32 +1,32 @@
-var _basePath = "/ninject/";
+var _basePath = "/ninject.website/";
 var _routeTemplates = {
   "community": {
-    "show": "/ninject/community"
+    "show": "/ninject.website/community"
   },
   "contribute": {
-    "show": "/ninject/contribute"
+    "show": "/ninject.website/contribute"
   },
   "download": {
-    "show": "/ninject/download"
+    "show": "/ninject.website/download"
   },
   "error": {
-    "show": "/ninject/error/{code}",
-    "shownotfound": "/ninject/{*url}"
+    "show": "/ninject.website/error/{code}",
+    "shownotfound": "/ninject.website/{*url}"
   },
   "extensions": {
-    "show": "/ninject/extensions"
+    "show": "/ninject.website/extensions"
   },
   "home": {
-    "show": "/ninject/"
+    "show": "/ninject.website/"
   },
   "learn": {
-    "show": "/ninject/learn"
+    "show": "/ninject.website/learn"
   },
   "merchandise": {
-    "show": "/ninject/merchandise"
+    "show": "/ninject.website/merchandise"
   },
   "sponsors": {
-    "show": "/ninject/sponsors"
+    "show": "/ninject.website/sponsors"
   }
 };
 
