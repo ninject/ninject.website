@@ -16,7 +16,7 @@
 
 	<extension>
 		<name>Ninject.Extensions.Conventions</name>
-		<website>http://github.com/idavis/ninject.extensions.conventions</website>
+		<website>http://github.com/ninject/ninject.extensions.conventions</website>
 		<author>
 			<name>Ian Davis</name>
 			<email>ian@innovatian.com</email>
@@ -30,7 +30,7 @@
 
 	<extension>
 		<name>Ninject.Extensions.Interception</name>
-		<website>http://github.com/idavis/ninject.extensions.interception</website>
+		<website>http://github.com/ninject/ninject.extensions.interception</website>
 		<author>
 			<name>Ian Davis</name>
 			<email>ian@innovatian.com</email>
@@ -44,7 +44,7 @@
 
 	<extension>
 		<name>Ninject.Extensions.Logging</name>
-		<website>http://github.com/idavis/ninject.extensions.logging</website>
+		<website>http://github.com/ninject/ninject.extensions.logging</website>
 		<author>
 			<name>Ian Davis</name>
 			<email>ian@innovatian.com</email>
@@ -58,7 +58,7 @@
 
 	<extension>
 		<name>Ninject.Extensions.MessageBroker</name>
-		<website>http://github.com/idavis/ninject.extensions.messagebroker</website>
+		<website>http://github.com/ninject/ninject.extensions.messagebroker</website>
 		<author>
 			<name>Ian Davis</name>
 			<email>ian@innovatian.com</email>
@@ -73,7 +73,7 @@
 
 	<extension>
 		<name>Ninject.Extensions.Wcf</name>
-		<website>https://github.com/idavis/ninject.extensions.wcf</website>
+		<website>https://github.com/ninject/ninject.extensions.wcf</website>
 		<author>
 			<name>Ian Davis</name>
 			<email>ian@innovatian.com</email>
@@ -87,7 +87,7 @@
 
 	<extension>
 		<name>Ninject.Extensions.WeakEventMessageBroker</name>
-		<website>http://github.com/idavis/ninject.extensions.weakeventmessagebroker</website>
+		<website>http://github.com/ninject/ninject.extensions.weakeventmessagebroker</website>
 		<author>
 			<name>Ian Davis</name>
 			<email>ian@innovatian.com</email>
@@ -102,7 +102,7 @@
 
 	<extension>
 		<name>Ninject.Extensions.Xml</name>
-		<website>http://github.com/enkari/ninject.extensions.xml</website>
+		<website>http://github.com/ninject/ninject.extensions.xml</website>
 		<author>
 			<name>Nate Kohari</name>
 			<email>nate@enkari.com</email>
@@ -116,7 +116,7 @@
 
 	<extension>
 		<name>Ninject.Moq</name>
-		<website>http://github.com/enkari/ninject.moq</website>
+		<website>http://github.com/ninject/ninject.moq</website>
 		<author>
 			<name>Nate Kohari</name>
 			<email>nate@enkari.com</email>
@@ -130,7 +130,7 @@
 
 	<extension>
 		<name>Ninject.Web</name>
-		<website>https://github.com/idavis/ninject.web</website>
+		<website>https://github.com/ninject/ninject.web</website>
 		<author>
 			<name>Ian Davis</name>
 			<email>ian@innovatian.com</email>
@@ -145,7 +145,7 @@
 
 	<extension>
 		<name>Ninject.Web.Mvc</name>
-		<website>http://github.com/enkari/ninject.web.mvc</website>
+		<website>http://github.com/ninject/ninject.web.mvc</website>
 		<author>
 			<name>Nate Kohari</name>
 			<email>nate@enkari.com</email>
@@ -153,7 +153,7 @@
 		<description>
 			<![CDATA[
 			Allows integration between Ninject and <a href="http://asp.net/mvc">ASP.NET MVC</a>.
-			(It powers this website! Check out <a href="http://github.com/enkari/ninject.website">the source</a> to see how.)
+			(It powers this website! Check out <a href="http://github.com/ninject/ninject.website">the source</a> to see how.)
 			]]>
 		</description>
 	</extension>

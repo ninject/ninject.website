@@ -22,11 +22,11 @@
 				Ninject runs on a lot of different versions of the .NET framework. Pick the one that matches your project.
 			</p>
 			<ul>
-				<li><a href="http://github.com/downloads/enkari/ninject/Ninject-2.0.0.0-release-net-3.5.zip">.NET Framework 3.5</a></li>
-				<li><a href="http://github.com/downloads/enkari/ninject/Ninject-2.0.0.0-release-netcf-3.5.zip">.NET Compact Framework 3.5</a></li>
-				<li><a href="http://github.com/downloads/enkari/ninject/Ninject-2.0.0.0-release-silverlight-2.0.zip">Silverlight 2.0</a></li>
-				<li><a href="http://github.com/downloads/enkari/ninject/Ninject-2.0.0.0-release-silverlight-3.0.zip">Silverlight 3.0</a></li>
-				<li><a href="http://github.com/downloads/enkari/ninject/Ninject-2.0.0.0-release-mono-2.0.zip">Mono 2.0</a></li>
+				<li><a href="http://github.com/downloads/ninject/ninject/Ninject-2.0.0.0-release-net-3.5.zip">.NET Framework 3.5</a></li>
+				<li><a href="http://github.com/downloads/ninject/ninject/Ninject-2.0.0.0-release-netcf-3.5.zip">.NET Compact Framework 3.5</a></li>
+				<li><a href="http://github.com/downloads/ninject/ninject/Ninject-2.0.0.0-release-silverlight-2.0.zip">Silverlight 2.0</a></li>
+				<li><a href="http://github.com/downloads/ninject/ninject/Ninject-2.0.0.0-release-silverlight-3.0.zip">Silverlight 3.0</a></li>
+				<li><a href="http://github.com/downloads/ninject/ninject/Ninject-2.0.0.0-release-mono-2.0.zip">Mono 2.0</a></li>
 			</ul>
 		</div>
 		
@@ -35,7 +35,7 @@
 		</div>
 		<div class="grid_12">
 			<p>
-				Ninject's source is hosted on <a href="http://github.com/enkari/ninject">GitHub</a>. If you have an idea for a patch,
+				Ninject's source is hosted on <a href="http://github.com/ninject/ninject">GitHub</a>. If you have an idea for a patch,
 				or you just want to tinker with the code, the easiest way to do so is to create your own fork on GitHub.
 			</p>
 			<p>
@@ -46,8 +46,8 @@
 				</ul>
 			</p>
 			<p>
-				If you don't want to bother with Git, you can also grab a <a href="http://github.com/enkari/ninject/zipball/master">zip archive</a>
-				or <a href="http://github.com/enkari/ninject/tarball/master">tarball</a> of the latest check-in.
+				If you don't want to bother with Git, you can also grab a <a href="http://github.com/ninject/ninject/zipball/master">zip archive</a>
+				or <a href="http://github.com/ninject/ninject/tarball/master">tarball</a> of the latest check-in.
 			</p>
 		</div>
 		
@@ -57,7 +57,7 @@
 		<div class="grid_12">
 			<p>
 				Support for versions of the .NET Framework prior to 3.5 was discontinued in Ninject 2.0. If you need backwards
-				compatibility, you can still use <a href="http://github.com/enkari/ninject1/">Ninject 1.5</a>. However, this version
+				compatibility, you can still use <a href="http://github.com/ninject/ninject1/">Ninject 1.5</a>. However, this version
 				is only receiving critical bug fixes, and all new development is being done on the Ninject 2.0 codebase. Please only
 				use this if you need to!
 			</p>
@@ -65,20 +65,20 @@
 				Binaries:
 			</p>
 			<ul>
-				<li><a href="http://github.com/downloads/enkari/ninject1/Ninject-1.5.0.0-release-net-3.5.zip">.NET Framework 3.5</a></li>
-				<li><a href="http://github.com/downloads/enkari/ninject1/Ninject-1.5.0.0-release-net-2.0.zip">.NET Framework 2.0</a></li>
-				<li><a href="http://github.com/downloads/enkari/ninject1/Ninject-1.5.0.0-release-netcf-3.5.zip">.NET Compact Framework 3.5</a></li>
-				<li><a href="http://github.com/downloads/enkari/ninject1/Ninject-1.5.0.0-release-netcf-2.0.zip">.NET Compact Framework 2.0</a></li>
-				<li><a href="http://github.com/downloads/enkari/ninject1/Ninject-1.5.0.0-release-silverlight-2.0.zip">Silverlight 2.0</a></li>
-				<li><a href="http://github.com/downloads/enkari/ninject1/Ninject-1.5.0.0-release-silverlight-3.0.zip">Silverlight 3.0</a></li>
-				<li><a href="http://github.com/downloads/enkari/ninject1/Ninject-1.5.0.0-release-mono-2.0.zip">Mono 2.0</a></li>
+				<li><a href="http://github.com/downloads/ninject/ninject1/Ninject-1.5.0.0-release-net-3.5.zip">.NET Framework 3.5</a></li>
+				<li><a href="http://github.com/downloads/ninject/ninject1/Ninject-1.5.0.0-release-net-2.0.zip">.NET Framework 2.0</a></li>
+				<li><a href="http://github.com/downloads/ninject/ninject1/Ninject-1.5.0.0-release-netcf-3.5.zip">.NET Compact Framework 3.5</a></li>
+				<li><a href="http://github.com/downloads/ninject/ninject1/Ninject-1.5.0.0-release-netcf-2.0.zip">.NET Compact Framework 2.0</a></li>
+				<li><a href="http://github.com/downloads/ninject/ninject1/Ninject-1.5.0.0-release-silverlight-2.0.zip">Silverlight 2.0</a></li>
+				<li><a href="http://github.com/downloads/ninject/ninject1/Ninject-1.5.0.0-release-silverlight-3.0.zip">Silverlight 3.0</a></li>
+				<li><a href="http://github.com/downloads/ninject/ninject1/Ninject-1.5.0.0-release-mono-2.0.zip">Mono 2.0</a></li>
 			</ul>
 			<p>
 				Source:
 			</p>
 			<ul>
-				<li><a href="http://github.com/enkari/ninject1/">Github repository</a></li>
-				<li><a href="http://github.com/downloads/enkari/ninject1/Ninject-1.5.0.0-source.zip">Zip archive</a></li>
+				<li><a href="http://github.com/ninject/ninject1/">Github repository</a></li>
+				<li><a href="http://github.com/downloads/ninject/ninject1/Ninject-1.5.0.0-source.zip">Zip archive</a></li>
 			</ul>
 		</div>
 		
