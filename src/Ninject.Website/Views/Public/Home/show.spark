@@ -75,7 +75,7 @@
 				<pre class="brush:csharp">
 					public class WarriorModule : NinjectModule {
 						public override void Load() {
-							Bind&lt;IWeapon&gt;.To&lt;Sword&gt;();
+							Bind&lt;IWeapon&gt;().To&lt;Sword&gt;();
 						}
 					}
 				</pre>
