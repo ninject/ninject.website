@@ -1,7 +1,0 @@
-lib/browser.js
-lib/jquery.js
-lib/jquery.cycle.js
-lib/jquery.easing.js
-lib/shCore.js
-lib/shBrushCSharp.js
-common.js

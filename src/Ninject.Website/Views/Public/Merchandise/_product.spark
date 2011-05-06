@@ -1,8 +1,0 @@
-<viewdata product="Product" />
-
-<a class="product" href="http://www.zazzle.com/nkohari*/product/${product.Id}?CMPN=ltte">
-	<img src="http://rdr.zazzle.com/img/imt-prd/isz-s/pd-${product.Id}/tl-${product.Image}" alt="${product.Name}" />
-	<div class="product-name">
-		${product.Name}
-	</div>
-</a>
