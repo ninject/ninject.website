@@ -74,7 +74,7 @@ namespace Ninject.Website.Models
                           select new Extension
                                      {
                                          Website = (string) extension.Element("website"),
-                                         Description = (string) extension.Element("description"),
+                                         Description = new HtmlString((string) extension.Element("description")),
                                          Author = new Author
                                                       {
                                                           Email =
