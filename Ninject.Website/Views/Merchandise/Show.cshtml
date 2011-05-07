@@ -1,0 +1,21 @@
+@model IEnumerable<IGrouping<string, Product>>
+@{
+    ViewBag.Title = "Merchandise";
+}
+<h2 class="section-header">
+    Get some killer merchandise
+</h2>
+
+<div id="grid-container" class="container_12">
+    <for each="var category in categories">
+        <div class="grid_12">
+            <h3>${category.Key}</h3>
+        </div>
+        <for each="var product in category">
+            <div class="grid_3">
+                <product />
+            </div>
+        </for>
+        <div class="clear"></div>
+    </for>
+</div>

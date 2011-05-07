@@ -98,10 +98,12 @@
   <ItemGroup>
     <Compile Include="App_Start\NinjectMVC3.cs" />
     <Compile Include="Controllers\CommunityController.cs" />
+    <Compile Include="Controllers\MerchandiseController.cs" />
     <Compile Include="Controllers\SponsorsController.cs" />
     <Compile Include="Controllers\LearnController.cs" />
     <Compile Include="Controllers\DownloadController.cs" />
     <Compile Include="Controllers\ContributeController.cs" />
+    <Compile Include="Controllers\ExtensionsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -182,7 +184,10 @@
     <None Include="Views\Community\Show.cshtml" />
     <None Include="Views\Contribute\Show.cshtml" />
     <None Include="Views\Download\Show.cshtml" />
+    <None Include="Views\Extensions\Show.cshtml" />
     <None Include="Views\Learn\Show.cshtml" />
+    <None Include="Views\Merchandise\Show.cshtml" />
+    <None Include="Views\Merchandise\_product.spark" />
     <None Include="Views\Sponsors\Show.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
