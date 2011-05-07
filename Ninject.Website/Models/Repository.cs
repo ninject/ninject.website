@@ -42,47 +42,50 @@ namespace Ninject.Website.Models
             return products.Value;
         }
 
-        #endregion
-
         public IEnumerable<Extension> GetExtensions()
         {
             return extensions.Value;
         }
 
+        #endregion
+
         private IEnumerable<Product> LoadProducts()
         {
-            XDocument doc = XDocument.Load( context.Server.MapPath( "~/App_Data/products.xml" ) );
-            return from productElement in doc.Root.Elements( "product" )
-                   select new Product
-                          {
-                                  Category = (string) productElement.Element( "category" ),
-                                  Id = (string) productElement.Element( "id" ),
-                                  Image = (string) productElement.Element( "image" ),
-                                  Name = (string) productElement.Element( "name" ),
-                          };
+            var doc = XDocument.Load( context.Server.MapPath( "~/App_Data/products.xml" ) );
+            return doc.Root == null
+                       ? Enumerable.Empty<Product>()
+                       : (from productElement in doc.Root.Elements("product")
+                          select new Product
+                                     {
+                                         Category = (string) productElement.Element("category"),
+                                         Id = (string) productElement.Element("id"),
+                                         Image = (string) productElement.Element("image"),
+                                         Name = (string) productElement.Element("name"),
+                                     }).ToList();
         }
 
         private IEnumerable<Extension> LoadExtensions()
         {
-            XDocument doc = XDocument.Load( context.Server.MapPath( "~/App_Data/extensions.xml" ) );
-            IEnumerable<Extension> extensions = from extension in doc.Root.Elements( "extension" )
-                                                let authorNode = extension.Element( "author" )
-                                                select new Extension
-                                                       {
-                                                               Website = (string) extension.Element( "website" ),
-                                                               Description = (string) extension.Element( "description" ),
-                                                               Author = new Author
-                                                                        {
-                                                                                Email =
-                                                                                        (string)
-                                                                                        authorNode.Element( "email" ),
-                                                                                Name =
-                                                                                        (string)
-                                                                                        authorNode.Element( "name" )
-                                                                        },
-                                                               Name = (string) extension.Element( "name" ),
-                                                       };
-            return extensions;
+            var doc = XDocument.Load( context.Server.MapPath( "~/App_Data/extensions.xml" ) );
+            return doc.Root == null
+                       ? Enumerable.Empty<Extension>()
+                       : (from extension in doc.Root.Elements("extension")
+                          let authorNode = extension.Element("author")
+                          select new Extension
+                                     {
+                                         Website = (string) extension.Element("website"),
+                                         Description = (string) extension.Element("description"),
+                                         Author = new Author
+                                                      {
+                                                          Email =
+                                                              (string)
+                                                              authorNode.Element("email"),
+                                                          Name =
+                                                              (string)
+                                                              authorNode.Element("name")
+                                                      },
+                                         Name = (string) extension.Element("name"),
+                                     }).ToList();
         }
     }
 }
