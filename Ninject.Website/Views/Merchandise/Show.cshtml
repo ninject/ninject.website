@@ -7,15 +7,17 @@
 </h2>
 
 <div id="grid-container" class="container_12">
-    <for each="var category in categories">
+    @foreach (var category in Model)
+    {
         <div class="grid_12">
-            <h3>${category.Key}</h3>
+            <h3>@category.Key</h3>
         </div>
-        <for each="var product in category">
+        foreach (var product in category)
+        {
             <div class="grid_3">
-                <product />
+                @Html.DisplayFor(_ => product)
             </div>
-        </for>
-        <div class="clear"></div>
-    </for>
+        }
+    }
+    <div class="clear"></div>
 </div>

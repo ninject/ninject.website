@@ -9,10 +9,10 @@ using Ninject.Website.Models;
 
 namespace Ninject.Website.App_Start
 {
-    using System.Reflection;
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
     using Ninject;
     using Ninject.Web.Mvc;
+    using Ninject.Website.Models;
 
     public static class NinjectMVC3 
     {
@@ -53,6 +53,7 @@ namespace Ninject.Website.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.Bind<IRepository>().To<Repository>();
             var extensions = LoadExtensions();
             kernel.Bind<IEnumerable<Extension>>().ToConstant( extensions );
         }

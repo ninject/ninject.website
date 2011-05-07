@@ -111,10 +111,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\IRepository.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Repository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\extensions.xml" />
+    <Content Include="App_Data\products.xml" />
     <Content Include="Content\images\arrow-left.png" />
     <Content Include="Content\images\arrow-right.png" />
     <Content Include="Content\images\background.png" />
@@ -191,7 +195,7 @@
     <None Include="Views\Extensions\Show.cshtml" />
     <None Include="Views\Learn\Show.cshtml" />
     <None Include="Views\Merchandise\Show.cshtml" />
-    <None Include="Views\Merchandise\_product.spark" />
+    <None Include="Views\Shared\DisplayTemplates\Product.cshtml" />
     <None Include="Views\Sponsors\Show.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

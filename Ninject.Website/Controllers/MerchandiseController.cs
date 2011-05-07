@@ -13,11 +13,20 @@ using System.Web.Mvc;
 
 namespace Ninject.Website.Controllers
 {
+    using System.Linq;
+    using Ninject.Website.Models;
+
     public class MerchandiseController : Controller
     {
+        private readonly IRepository repository;
+        public MerchandiseController(IRepository repository)
+        {
+            this.repository = repository;
+        }
+
         public ViewResult Show()
         {
-            return View();
+            return View(repository.GetProducts().GroupBy(p => p.Category));
         }
     }
 }
