@@ -97,14 +97,51 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\NinjectMVC3.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\images\arrow-left.png" />
+    <Content Include="Content\images\arrow-right.png" />
+    <Content Include="Content\images\background.png" />
+    <Content Include="Content\images\enkari.png" />
+    <Content Include="Content\images\external-link.gif" />
+    <Content Include="Content\images\headers\cards\be-fast-be-agile-be-precise.png" />
+    <Content Include="Content\images\headers\cards\bend-software-to-your-will.png" />
+    <Content Include="Content\images\headers\cards\laugh-in-the-face-of-change.png" />
+    <Content Include="Content\images\headers\cards\use-your-sharpest-tools.png" />
+    <Content Include="Content\images\headers\cards\write-smarter-software-everywhere.png" />
+    <Content Include="Content\images\headers\community.png" />
+    <Content Include="Content\images\headers\contribute.png" />
+    <Content Include="Content\images\headers\download.png" />
+    <Content Include="Content\images\headers\extensions.png" />
+    <Content Include="Content\images\headers\learn.png" />
+    <Content Include="Content\images\headers\merchandise.png" />
+    <Content Include="Content\images\headers\sponsors.png" />
+    <Content Include="Content\images\navigation\community.png" />
+    <Content Include="Content\images\navigation\contribute.png" />
+    <Content Include="Content\images\navigation\download.png" />
+    <Content Include="Content\images\navigation\extensions.png" />
+    <Content Include="Content\images\navigation\learn.png" />
+    <Content Include="Content\images\navigation\merchandise.png" />
+    <Content Include="Content\images\navigation\sponsors.png" />
+    <Content Include="Content\images\selected.png" />
+    <Content Include="Content\images\shuriken.png" />
+    <Content Include="Content\images\splash.png" />
+    <Content Include="Content\js\bundle.js" />
+    <Content Include="Content\js\common.js" />
+    <Content Include="Content\js\lib\browser.js" />
+    <Content Include="Content\js\lib\jquery.cycle.js" />
+    <Content Include="Content\js\lib\jquery.easing.js" />
+    <Content Include="Content\js\lib\jquery.js" />
+    <Content Include="Content\js\lib\shBrushCSharp.js" />
+    <Content Include="Content\js\lib\shCore.js" />
+    <Content Include="Content\js\routes.js" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
+    <Content Include="Content\css\bundle.css" />
     <Content Include="Scripts\jquery-1.6-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.js" />
     <Content Include="Scripts\jquery-1.6.min.js" />
@@ -128,11 +165,13 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Show.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

@@ -1,10 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿#region License
+//
+// Author: Nate Kohari <nate@enkari.com>
+// Copyright (c) 2007-2010, Enkari, Ltd.
+//
+// Dual-licensed under the Apache License, Version 2.0, and the Microsoft Public License (Ms-PL).
+// See the file LICENSE.txt for details.
+//
+#endregion
+#region Using Directives
 using System.Web.Mvc;
 using System.Web.Routing;
-
+#endregion
 namespace Ninject.Website
 {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
@@ -21,11 +27,7 @@ namespace Ninject.Website
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
-                "Default", // Route name
-                "{controller}/{action}/{id}", // URL with parameters
-                new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
-            );
+            routes.MapRoute("Default", "", new { controller = "Home", action = "Show" });
 
         }
 

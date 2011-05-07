@@ -3,11 +3,52 @@
 <head>
     <meta charset="utf-8" />
     <title>@ViewBag.Title</title>
-    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
-    <script src="@Url.Content("~/Scripts/jquery-1.6.min.js")" type="text/javascript"></script>
+    <link href="@Url.Content("~/Content/css/bundle.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Content/js/bundle.js")" type="text/javascript"></script>
 </head>
 
-<body>
+<body id="@ViewContext.RouteData.Values["Controller"].ToString().ToLower()">
+<div id="container">
+<div id="top">
+<h1><a href="/">Ninject</a></h1>
+<div id="adzerk">
+<div id="adzerk_ad_div"><script type="text/javascript" src="http://engine.theloungenet.com/Server/DOTNETOS/NINJECT/NOCSS">
+</script></div>
+<p id="adzerk_by"><a href="http://theloungenet.com">Ads by The Lounge</a></p>
+</div>
+<ul id="navigation">
+<li id="navigation-download"><a href="@Url.Action("show", "download")">Download it</a></li>
+<li id="navigation-extensions"><a href="@Url.Action("show", "extensions")">Extensions</a></li>
+<li id="navigation-contribute"><a href="@Url.Action("show", "contribute")">Contribute</a></li>
+<li id="navigation-learn"><a href="@Url.Action("show", "learn")">Visit the Dojo</a></li>
+<li id="navigation-community"><a href="@Url.Action("show", "community")">Speak up</a></li>
+<li id="navigation-sponsors"><a href="@Url.Action("show", "sponsors")">Sponsors</a></li>
+<li id="navigation-merchandise"><a href="@Url.Action("show", "merchandise")">Merchandise</a></li>
+</ul>
+<div id="selected-marker"></div>
+</div>
+<div id="content">
     @RenderBody()
-</body>
+</div>
+</div>
+<div id="footer" class="container_12">
+<div class="section grid_12">
+<div class="enkari"><a href="http://enkari.com/" target="_blank">Enkari</a></div>
+Ninject is the illegitimate brainchild of <a href="http://kohari.org/" target="_blank">Nate Kohari</a>. Copyright &copy;2007-2010 <a href="http://enkari.com/" target="_blank">Enkari, Ltd</a> and contributors.<br>
+This website is <a href="http://github.com/ninject/ninject.website">open source</a>! Go see how the giant hamster wheel turns.</div>
+</div>
+<a href="http://github.com/ninject/ninject"><img style="position: absolute; top: 0; left: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png" alt="Fork me on GitHub"></a> <script type="text/javascript">
+                                                                                                                                                                                                                   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+                                                                                                                                                                                                                   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+             try {
+                 var pageTracker = _gat._getTracker("UA-501149-3");
+                 pageTracker._trackPageview();
+             } catch (err) { }
+</script><!--[if IE 6]>
+                <script type="text/javascript"> 
+                        var IE6UPDATE_OPTIONS = { icons_path: "http://static.ie6update.com/hosted/ie6update/images/" };
+                </script>
+                <script type="text/javascript" src="http://static.ie6update.com/hosted/ie6update/ie6update.js"></script>
+                <![endif]--></body>
 </html>
