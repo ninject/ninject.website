@@ -22,16 +22,18 @@ namespace Ninject.Website.Controllers
 {
     public class ExtensionsController : Controller
     {
-        public ExtensionsController( IEnumerable<Extension> extensions )
+        public IRepository Repository { get; set; }
+
+        public ExtensionsController( IRepository repository )
         {
-            Extensions = extensions;
+            Repository = repository;
         }
 
         public IEnumerable<Extension> Extensions { get; set; }
 
         public ViewResult Show()
         {
-            return View( Extensions );
+            return View( Repository.GetExtensions() );
         }
     }
 }

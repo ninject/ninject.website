@@ -9,10 +9,13 @@
 #endregion
 #region Using Directives
 using System.Collections.Generic;
+using System.Web.Mvc;
+
 #endregion
 namespace Ninject.Website.Models
 {
     public interface IRepository {
         IEnumerable<Product> GetProducts();
+        IEnumerable<Extension> GetExtensions();
     }
 }
