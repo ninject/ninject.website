@@ -13,27 +13,33 @@
             Got a cool extension for Ninject that you want to share? Let us know, and we'll list it here.
         </div>
     </div>
-
-    <div each="var extension in extensions" class="grid_12">
-        <h3>${extension.Name}</h3>
+    <div class="grid_12">
+    @foreach (var extension in Model)
+    {
+        <h3>@extension.Name</h3>
         <p>
-            ${extension.Description}
+            @extension.Description
         </p>
         <ul>
             <li>
                 <strong>Author:</strong>
-                <if condition="extension.Author.Email == null">
-                    ${extension.Author.Name}
-                </if>
-                <else>
-                    <a href="mailto:${extension.Author.Email}">${extension.Author.Name}</a>
-                </else>
+                @if (extension.Author.Email == null)
+                {
+                     @extension.Author.Name
+                }
+                else
+                {
+                    <a href="mailto:@extension.Author.Email">@extension.Author.Name</a>
+                }
             </li>
             <li>
                 <strong>Website:</strong>
-                <a href="${extension.Website}">${extension.Website}</a>
+                <a href="@extension.Website">@extension.Website</a>
             </li>
         </ul>
+    }
+    
+        
     </div>
 
 </div>

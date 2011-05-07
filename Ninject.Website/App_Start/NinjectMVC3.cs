@@ -1,3 +1,9 @@
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Xml.Linq;
+using Ninject.Website.Models;
+
 [assembly: WebActivator.PreApplicationStartMethod(typeof(Ninject.Website.App_Start.NinjectMVC3), "Start")]
 [assembly: WebActivator.ApplicationShutdownMethodAttribute(typeof(Ninject.Website.App_Start.NinjectMVC3), "Stop")]
 
@@ -47,6 +53,28 @@ namespace Ninject.Website.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-        }        
+            var extensions = LoadExtensions();
+            kernel.Bind<IEnumerable<Extension>>().ToConstant( extensions );
+        }
+
+        private static IEnumerable<Extension> LoadExtensions()
+        {
+            var doc = XDocument.Load(HttpContext.Current.Server.MapPath("~/App_Data/extensions.xml"));
+            var extensions = from extension in doc.Root.Elements("extension")
+                             let authorNode = extension.Element("author")
+                             select new Extension
+                                    {
+                                            Website = (string)extension.Element("website"),
+                                            Description = (string)extension.Element("description"),
+                                            Author = new Author()
+                                                     {
+                                                             Email = (string)authorNode.Element("email"),
+                                                             Name = (string)authorNode.Element("name")
+
+                                                     },
+                                            Name = (string)extension.Element("name"),
+                                    };
+            return extensions;
+        }
     }
 }

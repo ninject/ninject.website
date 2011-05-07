@@ -97,8 +97,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\NinjectMVC3.cs" />
+    <Compile Include="Models\Author.cs" />
     <Compile Include="Controllers\CommunityController.cs" />
+    <Compile Include="Models\Extension.cs" />
     <Compile Include="Controllers\MerchandiseController.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Controllers\SponsorsController.cs" />
     <Compile Include="Controllers\LearnController.cs" />
     <Compile Include="Controllers\DownloadController.cs" />
@@ -111,6 +114,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\extensions.xml" />
     <Content Include="Content\images\arrow-left.png" />
     <Content Include="Content\images\arrow-right.png" />
     <Content Include="Content\images\background.png" />
@@ -172,7 +176,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
+    <Folder Include="Views\Error\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
