@@ -9,3 +9,4 @@ _ReSharper.*
 *.cache
 *Publish.xml
 src/Ninject.Website/Data/Errors/*
+packages
