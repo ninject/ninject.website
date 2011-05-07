@@ -27,8 +27,7 @@ namespace Ninject.Website
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute("Default", "", new { controller = "Home", action = "Show" });
-
+            routes.MapRoute("Default", "{controller}", new { controller = "Home", action = "Show" });
         }
 
         protected void Application_Start()
