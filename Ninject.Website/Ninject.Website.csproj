@@ -182,13 +182,13 @@
     <Content Include="Views\Home\Show.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Views\Community\Show.cshtml" />
-    <None Include="Views\Contribute\Show.cshtml" />
-    <None Include="Views\Download\Show.cshtml" />
-    <None Include="Views\Extensions\Show.cshtml" />
-    <None Include="Views\Learn\Show.cshtml" />
-    <None Include="Views\Merchandise\Show.cshtml" />
-    <None Include="Views\Shared\DisplayTemplates\Product.cshtml" />
+    <Content Include="Views\Community\Show.cshtml" />
+    <Content Include="Views\Contribute\Show.cshtml" />
+    <Content Include="Views\Download\Show.cshtml" />
+    <Content Include="Views\Extensions\Show.cshtml" />
+    <Content Include="Views\Learn\Show.cshtml" />
+    <Content Include="Views\Merchandise\Show.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Product.cshtml" />
     <None Include="Views\Sponsors\Show.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
